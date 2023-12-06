@@ -1,3 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -18,4 +23,42 @@ code {
   background-image: url(./assets/cage.png);
   object-fit: cover;
   background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
+.navbar-container
+{
+  display: flex;
+  margin-left: 3vw;
+  width: 55%; 
+  justify-content: space-between;
+  color: #fff;
+gap: 50px;
+  margin-top: 2vh;
+position: fixed;
+flex-wrap: nowrap;
+flex-shrink: 0;
+
+
+
+}
+
+.navbar-container .link { 
+  color: #fff;
+  text-decoration: none; 
+  font-style: none;
+  font-size: 1rem;
+  margin-right: -4.5vw;
+  
+
+}
+.ccc-logo img{
+  position: fixed;
+  width: 2rem;
+}
+.Header
+{
+  position: sticky;
+}
+
+
