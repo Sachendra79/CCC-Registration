@@ -17,8 +17,7 @@ code {
 }
 
 * {
-  background-color: #090a0f;
-  background-image: url(./assets/cage.png);
+  background: url(./assets/cage.png), #090a0f;
   object-fit: cover;
   background-size: cover;
   background-repeat: no-repeat;
@@ -35,15 +34,16 @@ code {
   position: fixed;
   flex-wrap: nowrap;
   flex-shrink: 0;
+  z-index: 1;
 }
 
-.navbar-container .link{
+.navbar-container .link {
   color: #fff;
   font-size: 1rem;
   margin-right: -4.5vw;
   background-clip: text;
 }
-.navbar-container .link:hover{
+.navbar-container .link:hover {
   background: #fff;
   width: 200px;
   color: #090a0f;
@@ -52,7 +52,7 @@ code {
   padding-right: 15px;
   transition: 0.3s;
   border-radius: 5px;
-  /* text-align: center; */
+  text-align: center;
 }
 .ccc-logo img {
   position: fixed;
@@ -62,4 +62,43 @@ code {
 }
 .Header {
   position: sticky;
+}
+
+.WhiteCard {
+  background-color: #fff;
+  width: 93%;
+  border-radius: 40px;
+  height: 70%;
+  position: absolute;
+  left: 3.5%;
+  top: 23%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 10px;
+  background-image: none;
+}
+.card {
+  background-color: #d9d9d9;
+  width: 96%;
+  height: 40rem;
+  position: absolute;
+  left: 2%;
+  top: 12%;
+  border-radius: 40px;
+  background-image: none;
+}
+.Image{
+  border-radius: 20px;
+};
+
+@media screen and (max-width: 500px) {
+  .WhiteCard {
+    width: 93%;
+    height: 191%;
+  }
+  .card{
+    width: 96%;
+    height: 300%;
+  }
 }

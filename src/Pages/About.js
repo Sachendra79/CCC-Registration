@@ -1,14 +1,15 @@
-import React from 'react'
-import Header from "../Components/Navbar"
+import React from "react";
+
 
 const About = () => {
+  
   return (
     <div>
-     
-       <div className='about-content'></div>
-       <div className='footer'></div>
+      <div className="about-content">
+      </div>
+      <div className="footer"></div>
     </div>
-  )
-}
+  );
+};
 
-export default About
+export default About;

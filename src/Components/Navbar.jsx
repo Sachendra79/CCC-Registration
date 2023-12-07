@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 const Navbar = () => {
   return (
     <div className='navbar-container'>
-        <div className='ccc-logo'><img src={logo}></img></div>
+        <div className='ccc-logo'><Link to="/"><img src={logo} /></Link></div>
         <div><Link to="/" className='link'>Home</Link> </div>
         <div><Link to="/about" className='link'>About</Link></div>
         <div><Link to="/faculty" className='link'>Faculty</Link></div>
