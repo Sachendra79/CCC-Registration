@@ -6,10 +6,10 @@ const Navbar = () => {
   return (
     <div className='navbar-container'>
         <div className='ccc-logo'><img src={logo}></img></div>
-        <div className='link'><Link to="/">Home</Link> </div>
-        <div className='link'><Link to="/about">About</Link></div>
-        <div className='link'><Link to="/faculty">Faculty</Link></div>
-        <div className='link'><Link to="/register">Register</Link></div>
+        <div><Link to="/" className='link'>Home</Link> </div>
+        <div><Link to="/about" className='link'>About</Link></div>
+        <div><Link to="/faculty" className='link'>Faculty</Link></div>
+        <div><Link to="/register" className='link'>Register</Link></div>
         
     </div>
   )
