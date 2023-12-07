@@ -1,6 +1,6 @@
 import React from 'react'
 import Navbar from "../Components/Navbar"
-import img from "../assets/Sarthak Srivastava 1.svg"
+
 
 const Home = () => {
   return (
