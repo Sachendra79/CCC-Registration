@@ -1,5 +1,6 @@
 import React from 'react'
 import Navbar from "../Components/Navbar"
+import Footer from '../Components/Footer'
 
 
 const Home = () => {
@@ -9,7 +10,9 @@ const Home = () => {
        <div className='home-content absolute text-[#fff] mt-10 mx-5'>
 
        </div>
-       <div className='footer'></div>
+       <div className='footer'>
+  <Footer/>
+       </div>
     </div>
   )
 }
