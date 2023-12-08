@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Coiny&family=Poppins:wght@700;800;900&family=Share+Tech&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -83,22 +85,160 @@ code {
   width: 96%;
   height: 40rem;
   position: absolute;
+  /* display: flex;
+  justify-content: center; */
   left: 2%;
   top: 12%;
   border-radius: 40px;
   background-image: none;
 }
-.Image{
+.Image {
   border-radius: 20px;
-};
+}
 
-@media screen and (max-width: 500px) {
-  .WhiteCard {
-    width: 93%;
-    height: 191%;
+.faculty-content h1 {
+  font-family: share tech;
+  position: absolute;
+  left: 40%;
+  top: 14%;
+  font-size: 40px;
+  font-weight: 400;
+  background: #d9d9d9;
+}
+
+.about-content h1{
+  font-family: share tech;
+  position: absolute;
+  left: 29%;
+  top: 14%;
+  width: 50%;
+  font-size: 2.5rem;
+  font-weight: 400;
+  background: #d9d9d9;
+}
+
+@media screen and (width <=1000px){
+  .about-content h1{
+    font-size: 1.9rem;
+    text-align: center;
+    left: 25%;
   }
-  .card{
-    width: 96%;
-    height: 300%;
+  .faculty-content h1{
+    font-size: 1.9rem;
+    text-align: center;
+  }
+}
+@media screen and (width <=800px){
+  .about-content h1{
+    font-size: 1.5rem;
+    text-align: center;
+    top: 15%;
+    left: 25%;
+  }
+  .faculty-content h1{
+    font-size: 1.9rem;
+    text-align: center;
+    left: 37%;
+  }
+}
+@media screen and (width <= 770px){
+  .about-content h1{
+    font-size: 1.5rem;
+    text-align: center;
+    left: 10%;
+    width: 80%;
+  }
+  .faculty-content h1{
+    font-size: 1.9rem;
+    text-align: center;
+  }
+}
+
+@media screen and (width <= 700px){
+  .about-content h1{
+    font-size: 1.5rem;
+    text-align: center;
+    left: 10%;
+    width: 80%;
+  }
+  .faculty-content h1{
+    font-size: 1.9rem;
+    text-align: center;
+    left: 34%;
+  }
+}
+
+@media screen and (width <= 600px){
+  .about-content h1{
+    font-size: 1.4rem;
+    text-align: center;
+    left: 10%;
+    width: 80%;
+  }
+}
+
+@media screen and (width <= 550px){
+  .about-content h1{
+    font-size: 1.2rem;
+    text-align: center;
+    left: 10%;
+    width: 80%;
+  }
+  .faculty-content h1{
+    font-size: 1.9rem;
+    text-align: center;
+    left: 29%;
+  }
+}
+
+@media screen and (width <=500px){
+  .about-content h1{
+    font-size: 1.3rem;
+    text-align: center;
+    left: 15%;
+    width: 70%;
+  }
+}
+@media screen and (width <= 450px){
+  .about-content h1{
+    font-size: 1.2rem;
+    text-align: center;
+    left: 10%;
+    width: 80%;
+  }
+  .faculty-content h1{
+    font-size: 1.9rem;
+    text-align: center;
+    left: 24%;
+  }
+}
+@media screen and (width <=400px){
+  .about-content h1{
+    font-size: 1.2rem;
+    text-align: center;
+    left: 10%;
+    width: 80%;
+  }
+  .faculty-content h1{
+    font-size: 1.9rem;
+    text-align: center;
+    left: 20%;
+  }
+}
+
+
+@media screen and (width <=360px){
+  .about-content h1{
+    font-size: 0.95rem;
+    text-align: center;
+    left: 15%;
+    top: 16%;
+    width: 70%;
+  }
+  .faculty-content h1{
+    font-size: 1.5rem;
+    text-align: center;
+    left: 24%;
+    top: 15%;
   }
 }
