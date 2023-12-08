@@ -127,6 +127,14 @@ code {
     font-size: 1.9rem;
     text-align: center;
   }
+  .Image{
+    width: auto;
+    height: 450px;
+  }
+  .design{
+    height: 450px;
+    width: 200px;
+  }
 }
 @media screen and (width <=800px){
   .about-content h1{
@@ -140,6 +148,14 @@ code {
     text-align: center;
     left: 37%;
   }
+  .Image{
+    width: auto;
+    height: 400px;
+  }
+  .design{
+    height: 400px;
+    width: 150px;
+  }
 }
 @media screen and (width <= 770px){
   .about-content h1{
@@ -151,6 +167,14 @@ code {
   .faculty-content h1{
     font-size: 1.9rem;
     text-align: center;
+  }
+  .Image{
+    width: auto;
+    height: 380px;
+  }
+  .design{
+    height: 380px;
+    width: 150px;
   }
 }
 
@@ -166,6 +190,14 @@ code {
     text-align: center;
     left: 34%;
   }
+  .Image{
+    width: auto;
+    height: 350px;
+  }
+  .design{
+    height: 350px;
+    width: 150px;
+  }
 }
 
 @media screen and (width <= 600px){
@@ -174,6 +206,14 @@ code {
     text-align: center;
     left: 10%;
     width: 80%;
+  }
+  .Image{
+    width: auto;
+    height: 320px;
+  }
+  .design{
+    height: 320px;
+    width: 100px;
   }
 }
 
@@ -189,6 +229,14 @@ code {
     text-align: center;
     left: 29%;
   }
+  .Image{
+    width: auto;
+    height: 280px;
+  }
+  .design{
+    height: 280px;
+    width: 100px;
+  }
 }
 
 @media screen and (width <=500px){
@@ -197,6 +245,14 @@ code {
     text-align: center;
     left: 15%;
     width: 70%;
+  }
+  .Image{
+    width: auto;
+    height: 280px;
+  }
+  .design{
+    height: 280px;
+    width: 80px;
   }
 }
 @media screen and (width <= 450px){
@@ -211,6 +267,20 @@ code {
     text-align: center;
     left: 24%;
   }
+  .Image{
+    width: auto;
+    height: 280px;
+  }
+  .design{
+    height: 280px;
+    width: 80px;
+  }
+  .WhiteCard{
+    height: 80%;
+  }
+  .card{
+    height: 93%;
+  }
 }
 @media screen and (width <=400px){
   .about-content h1{
@@ -223,6 +293,21 @@ code {
     font-size: 1.9rem;
     text-align: center;
     left: 20%;
+  }
+  .Image{
+    width: auto;
+    height: 290px;
+  }
+  .design{
+    height: 300px;
+    width: 150px;
+    margin: 10px;
+  }
+  .WhiteCard{
+    height: 140%;
+  }
+  .card{
+    height: 153%;
   }
 }
 
