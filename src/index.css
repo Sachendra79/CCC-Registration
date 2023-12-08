@@ -176,7 +176,9 @@ code {
     height: 380px;
     width: 150px;
   }
+  
 }
+
 
 @media screen and (width <= 700px){
   .about-content h1{
@@ -197,6 +199,12 @@ code {
   .design{
     height: 350px;
     width: 150px;
+  }
+  .WhiteCard{
+    height: 50%;
+  }
+  .card{
+    height: 63%;
   }
 }
 
@@ -254,6 +262,12 @@ code {
     height: 280px;
     width: 80px;
   }
+  .WhiteCard{
+    height: auto;
+  }
+  .card{
+    height: 52%;
+  }
 }
 @media screen and (width <= 450px){
   .about-content h1{
@@ -270,6 +284,7 @@ code {
   .Image{
     width: auto;
     height: 280px;
+    margin: 10px;
   }
   .design{
     height: 280px;
@@ -277,6 +292,14 @@ code {
   }
   .WhiteCard{
     height: 80%;
+  }
+  .card{
+    height: 93%;
+  }
+}
+@media screen and (width <= 478px) {
+  .Image{
+    margin: 10px;
   }
   .card{
     height: 93%;
@@ -325,5 +348,25 @@ code {
     text-align: center;
     left: 24%;
     top: 15%;
+  }
+}
+
+@media screen and (width <= 290px) {
+  .WhiteCard{
+    height: 45%;
+    top: 20%;
+  }
+  .Image{
+    width: auto;
+    height: 400px;
+    margin: auto;
+  }
+  .design{
+    height: 400px;
+    width: 200px;
+    margin: auto; 
+  }
+  .card{
+    height: 55%;
   }
 }
