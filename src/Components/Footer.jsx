@@ -6,7 +6,7 @@ import Priya from "../assets/20221127_183841 1.svg"
 import location from "../assets/Vector(1).svg"
 import akgec from "../assets/Group 41.svg"
 import call from "../assets/Vector(2).svg"
-import img from "../assets/Rectangle 27(1).svg"
+
 const Footer = () => {
   return (
     <div className='footer-container flex flex-col'>
