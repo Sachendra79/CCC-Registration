@@ -12,6 +12,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background: url(./assets/cage.png), #090a0f;
+  overflow-x: hidden;
 }
 
 code {
@@ -20,7 +21,6 @@ code {
 }
 
 * {
-
   object-fit: cover;
   background-size: cover;
   background-repeat: no-repeat;
@@ -66,7 +66,7 @@ code {
 .Header {
   position: sticky;
 }
-.design{
+.design {
   width: 340px;
 }
 .WhiteCard {
@@ -99,6 +99,11 @@ code {
   border-radius: 20px;
 }
 
+.Rohit {
+  height: 200px;
+  position: absolute;
+  
+}
 .faculty-content h1 {
   font-family: share tech;
   position: absolute;
@@ -109,7 +114,7 @@ code {
   background: #d9d9d9;
 }
 
-.about-content h1{
+.about-content h1 {
   font-family: share tech;
   position: absolute;
   left: 29%;
@@ -120,47 +125,387 @@ code {
   background: #d9d9d9;
 }
 
-.mobile_design{
+.mobile_design {
   display: none;
 }
 
-@media screen and (width <=1000px){
-  .about-content h1{
+.picture-card:hover {
+  cursor: pointer;
+}
+.footer-below:hover {
+  cursor: pointer;
+}
+
+.Header {
+  position: sticky;
+}
+.footer-container {
+  border-top: 3px solid #fff;
+  margin-top: 5vh;
+}
+
+.footer-main {
+  width: 90vw;
+  height: 40vh;
+}
+
+.picture-card {
+  height: 35vh;
+  width: 15vh;
+  background: #1e1e1e;
+}
+.bg-color {
+  height: 34vh;
+  width: 15vh;
+}
+
+.picture img {
+  width: 15vw;
+  height: 29vh;
+  scale: 0.9;
+  object-fit: cover;
+}
+
+.home-container {
+  width: 95 vw;
+  height: 80vh;
+  overflow-x: hidden;
+  margin-top: 10vh;
+  display: flex;
+  flex-direction: column;
+}
+.home-content {
+  width: 90vw;
+  height: 60vh;
+}
+.main-upside {
+  display: flex;
+  justify-content: space-between;
+  height: 50%;
+  width: 100%;
+  flex-wrap: wrap;
+}
+.upside-left {
+  width: 40vw;
+  margin-left: 5vw;
+  overflow-x: hidden;
+}
+
+.upside-right img {
+  width: 20vw;
+  overflow: hidden;
+  overflow-x: hidden;
+  object-fit: cover;
+  border: 2px white solid;
+  border-radius: 50%;
+  margin-top: -15vh;
+  margin-bottom: 12vh;
+}
+.below-left {
+  width: 50%;
+  margin-left: 16vw;
+}
+
+.footer_facultypage {
+  position: absolute;
+  top: 800px;
+}
+
+.Left_design {
+  width: 401.09px;
+  height: 311.97px;
+  position: absolute;
+  top: -24px;
+  left: 0px;
+}
+
+.Right_design {
+  width: 401.09px;
+  height: 311.97px;
+  position: absolute;
+  top: -24px;
+  left: 1030px;
+  transform: scaleX(-1);
+}
+
+.WhiteCard section h4{
+  font-size: 1.5vw;
+  position: absolute;
+  top: 210px;
+  left: 46%;
+  font-family: poppins;
+  font-weight: 600;
+}
+
+/* media query */
+
+@media screen and (max-width: 299px) {
+  .footer-container {
+    gap: -20px;
+  }
+
+  .navbar-container .link {
+    font-size: 0.5rem;
+  }
+  .picture-card {
+    scale: 0.4;
+    margin-top: -50px;
+    margin-left: -15px;
+  }
+  .picture img {
+    width: 150%;
+  }
+  .Tech-Buzz {
+    width: 150px;
+  }
+  .logo-image {
+    scale: 1.2;
+  }
+  .logo-para {
+    font-size: 10px;
+  }
+  .footer-below {
+    gap: 10px;
+    margin-top: -50px;
+  }
+  .contact {
+    scale: 0.7;
+  }
+
+  .upside-left {
+    width: 60vw;
+    margin-left: 8vw;
+    margin-top: -10vh;
+  }
+  .upside-right {
+    margin-left: 28vw;
+    margin-top: 20vh;
+  }
+  .upside-right img {
+    width: 35vw;
+  }
+
+  .below-upside {
+    margin-left: -20vw;
+    width: 40vw;
+    font-size: 11px;
+  }
+  .below-downside {
+    margin-left: -20vw;
+  }
+  .below-right {
+    font-size: 11px;
+  }
+  .btn-pink {
+    scale: 0.8;
+    margin-top: 7vh;
+  }
+  .some {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 600px) and (min-width: 300px) {
+  /* Styles for extra small devices */
+  .navbar-container .link {
+    font-size: 1rem;
+  }
+
+  .footer-container {
+    gap: -20px;
+  }
+  .picture-card {
+    scale: 0.5;
+    margin-top: -50px;
+  }
+  .picture img {
+    width: 150%;
+  }
+  .Tech-Buzz {
+    width: 60vw;
+  }
+  .logo-image {
+    scale: 1.2;
+  }
+  .logo-para {
+    font-size: 10px;
+  }
+  .footer-below {
+    gap: 10px;
+    margin-top: -50px;
+  }
+  .contact {
+    scale: 0.7;
+  }
+
+  .upside-left {
+    width: 60vw;
+    margin-left: 8vw;
+    margin-top: -10vh;
+  }
+  .upside-right {
+    margin-left: 28vw;
+    margin-top: 20vh;
+  }
+  .upside-right img {
+    width: 30vw;
+  }
+
+  .below-upside {
+    margin-left: -20vw;
+    width: 40vw;
+    margin-top: 5vh;
+    font-size: 14px;
+  }
+  .below-downside {
+    margin-left: -20vw;
+  }
+  .below-right {
+    position: relative;
+    right: 5vw;
+    font-size: 14px;
+  }
+  .btn-pink {
+    scale: 0.8;
+    margin-top: 7vh;
+  }
+  .some {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+  .footer-container {
+    gap: -20px;
+  }
+
+  .picture img {
+    width: 150%;
+  }
+
+  .logo-image {
+    scale: 1.2;
+  }
+  .logo-para {
+    font-size: 15px;
+  }
+  .footer-below {
+    gap: 10px;
+    margin-top: -50px;
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  /* Styles for medium devices */
+  .footer-container {
+    gap: -20px;
+  }
+
+  .picture img {
+    width: 350px;
+  }
+  .picture {
+    width: 100%;
+    height: 90%;
+  }
+  .picture-content {
+    width: 100%;
+  }
+
+  .upside-right {
+    margin-top: 10vh;
+    margin-right: 5vw;
+  }
+  .upside-right img {
+    width: 30vw;
+  }
+  .below-upside {
+    margin-left: -20vw;
+    width: 40vw;
+    margin-top: 5vh;
+    font-size: 20px;
+  }
+
+  .below-right {
+    position: relative;
+    right: 5vw;
+    font-size: 20px;
+  }
+}
+
+@media screen and (width <=1000px) {
+  .about-content h1 {
     font-size: 1.9rem;
     text-align: center;
     left: 25%;
   }
-  .faculty-content h1{
+  .faculty-content h1 {
     font-size: 1.9rem;
     text-align: center;
   }
-  .Image{
+  .Image {
     width: auto;
     height: 450px;
   }
-  .design{
+  .WhiteCard {
+    height: auto;
+  }
+  .design {
     height: 450px;
     width: 283px;
     margin: 10px;
   }
+  .card {
+    height: 560px;
+  }
+  .picture-card{
+    transform: scale(0.9);
+    width: 150px;
+    height: 190px;
+  }
 }
-@media screen and (width <=800px){
-  .about-content h1{
+@media screen and (width <=950px) {
+  .design {
+    height: 300px;
+    width: 200px;
+    margin-top: 80px;
+    margin-left: 20px;
+    align-items: center;
+  }
+  .WhiteCard {
+    height: auto;
+  }
+}
+@media screen and (width <=850px) {
+  .design {
+    height: 300px;
+    width: 200px;
+    margin-top: 80px;
+    margin-left: 20px;
+    align-items: center;
+  }
+  .Image {
+    width: auto;
+    height: 400px;
+  }
+}
+@media screen and (width <=800px) {
+  .about-content h1 {
     font-size: 1.5rem;
     text-align: center;
     top: 15%;
     left: 25%;
   }
-  .faculty-content h1{
+  .faculty-content h1 {
     font-size: 1.9rem;
     text-align: center;
     left: 37%;
   }
-  .Image{
+  .Image {
     width: auto;
     height: 400px;
   }
-  .design{
+  .design {
     height: 250px;
     width: 160px;
     margin-top: 80px;
@@ -168,100 +513,113 @@ code {
     align-items: center;
   }
 }
-@media screen and (width <= 770px){
-  .about-content h1{
+@media screen and (width <= 770px) {
+  .about-content h1 {
     font-size: 1.5rem;
     text-align: center;
     left: 10%;
     width: 80%;
   }
-  .faculty-content h1{
+  .faculty-content h1 {
     font-size: 1.9rem;
     text-align: center;
   }
-  .Image{
+  .Image {
     width: auto;
     height: 380px;
   }
-  .design{
+  .design {
     height: 250px;
     width: 160px;
     margin-top: 80px;
     margin-left: 20px;
     align-items: center;
   }
-  
+  .card {
+    height: 482px;
+  }
 }
-
-
-@media screen and (width <= 700px){
-  .about-content h1{
+@media screen and (width <= 730px) {
+  .Image {
+    width: auto;
+    height: 330px;
+  }
+}
+@media screen and (width <= 700px) {
+  .about-content h1 {
     font-size: 1.5rem;
     text-align: center;
     left: 10%;
     width: 80%;
   }
-  .faculty-content h1{
+  .faculty-content h1 {
     font-size: 1.9rem;
     text-align: center;
     left: 34%;
   }
-  .Image{
+  .Image {
     width: auto;
-    height: 350px;
+    height: 300px;
   }
-  .design{
+  .design {
     height: 250px;
     width: 160px;
-    margin-top: 80px;
-    margin-left: 20px;
     align-items: center;
   }
-  .WhiteCard{
-    height: 50%;
+  .WhiteCard {
+    height: 52%;
   }
-  .card{
-    height: 63%;
+  .card {
+    height: 435px;
   }
 }
-
-@media screen and (width <= 600px){
-  .about-content h1{
+@media screen and (width <= 650px) {
+  .Image {
+    width: auto;
+    height: 300px;
+  }
+  .design {
+    height: 200px;
+    width: 140px;
+    align-items: center;
+  }
+}
+@media screen and (width <= 600px) {
+  .about-content h1 {
     font-size: 1.4rem;
     text-align: center;
     left: 10%;
     width: 80%;
   }
-  .Image{
+  .Image {
     width: auto;
-    height: 320px;
+    height: 280px;
   }
-  .design{
+  .design {
     height: 170px;
     width: 110px;
-    margin-top: 80px;
     margin-left: 20px;
     align-items: center;
   }
 }
 
-@media screen and (width <= 550px){
-  .about-content h1{
+@media screen and (width <= 550px) {
+  .about-content h1 {
     font-size: 1.2rem;
     text-align: center;
     left: 10%;
     width: 80%;
   }
-  .faculty-content h1{
+  .faculty-content h1 {
     font-size: 1.9rem;
     text-align: center;
     left: 29%;
   }
-  .Image{
+  .Image {
     width: auto;
-    height: 280px;
+    height: 250px;
   }
-  .design{
+  .design {
     height: 170px;
     width: 110px;
     margin-top: 80px;
@@ -270,135 +628,158 @@ code {
   }
 }
 
-@media screen and (width <=500px){
-  .about-content h1{
+@media screen and (width <=500px) {
+  .about-content h1 {
     font-size: 1.3rem;
     text-align: center;
     left: 15%;
     width: 70%;
   }
-  .Image{
+  .Image {
     width: auto;
     height: 380px;
   }
-  .design{
+  .design {
     display: none;
   }
-  .mobile_design{
+  .mobile_design {
     display: block;
     height: 80px;
     width: 300px;
     margin: 20px;
   }
-  .WhiteCard{
+  .WhiteCard {
     height: auto;
   }
-  .card{
-    height: 130%;
+  .card {
+    height: 985px;
+  }
+  .footer_facultypage{
+    top: 1250px;
   }
 }
 
 @media screen and (width <= 478px) {
-  .Image{
+  .Image {
     margin: 10px;
   }
-  .card{
+  .card {
     height: 93%;
   }
-  .card{
-    height: 135%;
+  .card {
+    height: 1070px;
   }
 }
-@media screen and (width <= 450px){
-  .about-content h1{
+@media screen and (width <= 450px) {
+  .about-content h1 {
     font-size: 1.2rem;
     text-align: center;
     left: 10%;
     width: 80%;
   }
-  .faculty-content h1{
+  .faculty-content h1 {
     font-size: 1.9rem;
     text-align: center;
     left: 24%;
   }
-  .Image{
+  .Image {
     width: auto;
     height: 380px;
   }
-  .design{
+  .design {
     display: none;
   }
-  .WhiteCard{
+  .WhiteCard {
     height: auto;
   }
-  .card{
-    height: 135%;
+  .card {
+    height: 1070px;
   }
 }
-@media screen and (width <=400px){
-  .about-content h1{
+@media screen and (width <=400px) {
+  .about-content h1 {
     font-size: 1.2rem;
     text-align: center;
     left: 10%;
     width: 80%;
   }
-  .faculty-content h1{
+  .faculty-content h1 {
     font-size: 1.9rem;
     text-align: center;
     left: 20%;
   }
-  .Image{
+  .Image {
     width: auto;
     height: 380px;
   }
-  .design{
+  .design {
     display: none;
   }
-  .WhiteCard{
+  .WhiteCard {
     height: 140%;
   }
-  .card{
-    height: 152%;
+  .card {
+    height: 155%;
+  }
+  .footer_facultypage{
+    top: 175%;
+  }
+  .footer-container {
+    gap: -20px;
+  }
+  .picture-card {
+    margin: -15px;
   }
 }
 
-
-@media screen and (width <=360px){
-  .about-content h1{
+@media screen and (width <=360px) {
+  .about-content h1 {
     font-size: 0.95rem;
     text-align: center;
     left: 15%;
     top: 16%;
     width: 70%;
   }
-  .faculty-content h1{
+  .faculty-content h1 {
     font-size: 1.5rem;
     text-align: center;
     left: 24%;
     top: 15%;
   }
+  .footer_facultypage{
+    top: 1400px;
+  }
+  .picture-card {
+    margin: -20px;
+  }
 }
 
 @media screen and (width <= 290px) {
-  .WhiteCard{
+  .WhiteCard {
     height: auto;
     top: 20%;
   }
-  .Image{
+  .Image {
     width: auto;
     height: 340px;
     margin: auto;
   }
-  .design{
+  .design {
     display: none;
   }
-  .card{
-    height: 130%;
+  .card {
+    height: 850px;
   }
-  .mobile_design{
+  .mobile_design {
     display: block;
     height: 50px;
     width: 200px;
     margin: 20px;
+  }
+  .picture-card {
+    margin-left: -30px;
+  }
+  .footer_facultypage{
+    top: 145%;
   }
 }

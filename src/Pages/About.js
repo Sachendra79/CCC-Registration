@@ -1,21 +1,24 @@
 import React from "react";
 import Card from '../Components/Card'
-import Design from '../assets/Design.svg'
+import Rohit from '../assets/Rohit.svg'
+import About_Design from '../assets/AboutPage_design.svg'
 
 const About = () => {
-  const Image_design = {
-    backgroungImage: 'none',
-  }
   return (
     <div>
       <div className="about-content">
         <Card />
         <h1>### Mastering Algorithms: Mr. Rohit Negi</h1>
         <div className="WhiteCard">
-          <img src={Design} alt="ImageNA" style={Image_design} />
+          <img src={About_Design} alt="Rohit" className="Left_design"/>
+          <img src={Rohit} alt="ImageNA" className="Rohit"/>
+          <img src={About_Design} alt="Rohit" className="Right_design"/>
+          <section>
+            <h4>Rohit Negi</h4>
+          </section>
         </div>
       </div>
-      <div className="footer"></div>
+      <div className=""></div>
     </div>
   );
 };

@@ -1,8 +1,11 @@
 import React from "react";
 import Card from "../Components/Card";
-import card from "../assets/Card.svg";
+import sir_card from "../assets/Sir_Card.svg";
+import mam_card from '../assets/Mam_Card.svg'
 import middle from "../assets/Image_middle.svg";
 import mobile from '../assets/Mobile_cover.svg'
+import Footer from '../Components/Footer'
+
 const Faculty = () => {
   return (
     <div>
@@ -11,13 +14,13 @@ const Faculty = () => {
         <Card />
         <h1>Faculty Coordinators</h1>
         <div className="WhiteCard">
-            <img src={card} alt="ImageNA" className="Image" />
+            <img src={sir_card} alt="ImageNA" className="Image" />
             <img src={middle} alt="ImageNA" className="design"/>
             <img src={mobile} alt="ImageNA" className="mobile_design"/>
-            <img src={card} alt="ImageNA" className="Image" />
+            <img src={mam_card} alt="ImageNA" className="Image" />
         </div>
       </div>
-      <div className="footer"></div>
+      <div className="footer_facultypage"> <Footer /></div>
     </div>
   );
 };
