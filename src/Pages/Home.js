@@ -15,9 +15,9 @@ function clickHandler ()
 }
 
   return (
-    <div className='home-container flex flex-col'>
+    <div className='home-container flex flex-col  '>
        
-       <div className='home-content absolute text-[#fff]  mt-10 mx-5 flex flex-col'>
+       <div className='home-content absolute text-[#fff]  mt-10  flex flex-col'>
            <div className='main-upside '>
            <div className='upside-left'>
             <img src={Tech}></img>
@@ -31,14 +31,14 @@ function clickHandler ()
                 <div className='below-left flex flex-col ml-14 justify-between'>
               
               <div className='below-upside flex justify-between'>
-              <div className='flex gap-3'>
+              <div className='some flex gap-3'>
               <div>  <img src={location}></img></div>
               <div><p>CS/IT</p>
               <p>seminar hall</p></div>
             
         
               </div>
-              <div className='flex gap-3'>
+              <div className='some flex gap-3'>
                 <div>  <img src={calender}></img></div>
                 <div> <p>Date: 15 Dec</p>
               <p>4:00PM onwards</p></div>
@@ -48,7 +48,7 @@ function clickHandler ()
 
               </div>
               <div className='below-downside text-[#fff]'>
-                 <button className='btn-pink bg-[#fff] text-[#000]' onClick={clickHandler}>Register now</button>
+                 <button className='btn-pink bg-[#fff] text-[#000] w-40 h-14 font-semibold p-3 rounded-md' onClick={clickHandler}>Register now</button>
 
               </div>
 
@@ -60,8 +60,8 @@ function clickHandler ()
                       <p> IIT Guwahati |</p>
                       <p> Ex- UBER SDE |</p>
                       <p>Got Highest</p>
-                      <p>Placement in India</p>
-                      <p> of 2Cr+ |</p>
+                      <p>Placement in </p>
+                      <p>India of 2Cr+ |</p>
                       <p> 150K+ Youtube</p>
           
 
@@ -71,12 +71,15 @@ function clickHandler ()
 
             </div>
 
+            <div className=' text-[#fff]'>
+           <Footer/>
+  </div>
 
 
        </div>
-       {/* <div className='footer'>
-  <Footer/>
-       </div> */}
+
+      
+
     </div>
   )
 }

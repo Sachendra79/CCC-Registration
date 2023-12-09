@@ -25,6 +25,7 @@ code {
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+ 
   
 }
 .navbar-container
@@ -35,13 +36,14 @@ code {
   justify-content: space-between;
   color: #fff;
 gap: 50px;
-  margin-top: 2%;
+  margin-top: 1%;
 position: fixed;
 flex-wrap: nowrap;
 flex-shrink: 0;
 height: 5%;
-background-color: #000;
+z-index: 1;
 height: 5vh;
+position: fixed;
 
 }
 
@@ -49,7 +51,7 @@ height: 5vh;
   color: #fff;
   text-decoration: none; 
   font-style: none;
-  font-size: 1rem;
+  font-size: 1.3rem;
   margin-right: -4.5vw;
   background-clip: text;
   width: 100px;
@@ -73,11 +75,17 @@ cursor: pointer;
 {
   position: sticky;
 }
+.footer-container
+{
+
+  border-top:3px solid #fff ;
+  margin-top: 5vh;
+}
 
 .footer-main
 {
 width: 90vw;
-height: 50vh;
+height: 40vh;
 
 
 }
@@ -106,10 +114,12 @@ height: 50vh;
 
 .home-container 
 {
-  width: 95vw;
+  width: 100vw;
   height: 80vh;
  overflow-x: hidden;
  margin-top: 10vh;
+ display: flex;
+ flex-direction: column;
 }
 .home-content
 {
@@ -121,35 +131,42 @@ height: 50vh;
 .main-upside
 {
   display: flex;
-  justify-content:space-between;
+justify-content: space-between;
   height: 50%;
+width: 100%;
+flex-wrap: wrap;
+ 
 }
 .upside-left
 {
   width: 40vw;
- 
+ margin-left: 5vw;
   overflow-x: hidden;
 }
+
+
 .upside-right img
 {
   width: 20vw;
-  position: relative;
-  top: -15vh;
-  
   overflow: hidden;
   overflow-x: hidden;
   object-fit: cover;
   border: 2px white solid;
   border-radius: 50%;
-  
+  margin-top: -15vh;
+  margin-bottom: 12vh;
+
 }
 .below-left
 {
   width: 50%;
+  margin-left: 16vw;
 }
 
 
-.btn-pink {
+
+
+/* .btn-pink {
   background-color: #4e4646;
  
   border: solid 2px #fff;
@@ -186,7 +203,7 @@ height: 50vh;
   border: solid 3px #000;
   color: black;
   
-}
+} */
 
 
 
@@ -194,6 +211,11 @@ height: 50vh;
   .footer-container
   {
     gap: -20px;
+  }
+
+  .navbar-container .link
+  {
+    font-size: 1.1rem;
   }
 .picture-card{
   scale: 0.4;
@@ -225,10 +247,63 @@ height: 50vh;
 {
   scale: 0.7;
 }
+
+
+
+.upside-left 
+{
+  width: 60vw;
+  margin-left: 8vw;
+     margin-top: -10vh;
+}
+.upside-right
+{
+
+margin-left: 28vw;
+margin-top: 20vh;
+}
+.upside-right img 
+{
+  width: 35vw;
+}
+
+
+.below-upside
+{
+  margin-left: -20vw;
+ width: 40vw;
+  font-size: 11px;
+}
+.below-downside
+{
+  margin-left: -20vw;
+}
+.below-right
+{
+
+font-size: 11px;
+}
+.btn-pink
+{
+  scale: 0.8;
+  margin-top: 7vh;
+}
+ .some
+ {
+  flex-direction: column;
+ }
+
+
+
 }
 
 @media only screen and (max-width: 600px) and (min-width:300px){
   /* Styles for extra small devices */
+  .navbar-container .link
+  {
+    font-size: 1rem;
+  }
+
   .footer-container
   {
     gap: -20px;
@@ -242,7 +317,7 @@ height: 50vh;
 }
 .Tech-Buzz
 {
-  scale: 0.6;
+  width: 60vw;
 }
 .logo-image
 {
@@ -261,6 +336,52 @@ height: 50vh;
 {
   scale: 0.7;
 }
+
+
+.upside-left 
+{
+  width: 60vw;
+  margin-left: 8vw;
+     margin-top: -10vh;
+}
+.upside-right
+{
+
+margin-left: 28vw;
+margin-top: 20vh;
+}
+.upside-right img 
+{
+  width: 30vw;
+}
+
+
+.below-upside
+{
+  margin-left: -20vw;
+ width: 40vw;
+  margin-top: 5vh;
+  font-size: 14px;
+}
+.below-downside
+{
+  margin-left: -20vw;
+}
+.below-right
+{
+position: relative;
+right: 5vw;
+font-size: 14px;
+}
+.btn-pink
+{
+  scale: 0.8;
+  margin-top: 7vh;
+}
+ .some
+ {
+  flex-direction: column;
+ }
 
 
 }
@@ -311,6 +432,29 @@ height: 50vh;
   width: 100%;
  }
 
+ .upside-right 
+ {
+    margin-top: 10vh;
+   margin-right: 5vw;
+ 
+ }
+ .upside-right img {
+    width: 30vw;
+ }
+ .below-upside
+ {
+   margin-left: -20vw;
+  width: 40vw;
+   margin-top: 5vh;
+   font-size: 20px;
+ }
+
+ .below-right
+ {
+ position: relative;
+ right: 5vw;
+ font-size: 20px;
+ }
 
 }
 

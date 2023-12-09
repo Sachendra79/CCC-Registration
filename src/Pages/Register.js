@@ -5,7 +5,7 @@ const Register = () => {
     <div>
        <div className='Header'></div>
        <div className='register-content'></div>
-       <div className='footer'></div>
+       
     </div>
   )
 }

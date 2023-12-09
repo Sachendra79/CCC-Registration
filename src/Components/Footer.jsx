@@ -9,7 +9,7 @@ import call from "../assets/Vector(2).svg"
 
 const Footer = () => {
   return (
-    <div className='footer-container flex flex-col'>
+    <div className='footer-container flex flex-col  '>
       <div className='Tech-Buzz m-auto w-96'><img src={Tech} alt="" /> </div>
 
       <div className='footer-main flex justify-evenly'>
