@@ -2,7 +2,7 @@ import React from "react";
 import Card from "../Components/Card";
 import card from "../assets/Card.svg";
 import middle from "../assets/Image_middle.svg";
-
+import mobile from '../assets/Mobile_cover.svg'
 const Faculty = () => {
   return (
     <div>
@@ -13,6 +13,7 @@ const Faculty = () => {
         <div className="WhiteCard">
             <img src={card} alt="ImageNA" className="Image" />
             <img src={middle} alt="ImageNA" className="design"/>
+            <img src={mobile} alt="ImageNA" className="mobile_design"/>
             <img src={card} alt="ImageNA" className="Image" />
         </div>
       </div>

@@ -11,6 +11,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: url(./assets/cage.png), #090a0f;
 }
 
 code {
@@ -19,7 +20,7 @@ code {
 }
 
 * {
-  background: url(./assets/cage.png), #090a0f;
+
   object-fit: cover;
   background-size: cover;
   background-repeat: no-repeat;
@@ -65,7 +66,9 @@ code {
 .Header {
   position: sticky;
 }
-
+.design{
+  width: 340px;
+}
 .WhiteCard {
   background-color: #fff;
   width: 93%;
@@ -117,6 +120,11 @@ code {
   background: #d9d9d9;
 }
 
+.mobile_design{
+  width: 0px;
+  height: 0px;
+}
+
 @media screen and (width <=1000px){
   .about-content h1{
     font-size: 1.9rem;
@@ -133,7 +141,8 @@ code {
   }
   .design{
     height: 450px;
-    width: 200px;
+    width: 283px;
+    margin: 10px;
   }
 }
 @media screen and (width <=800px){
@@ -153,8 +162,11 @@ code {
     height: 400px;
   }
   .design{
-    height: 400px;
-    width: 150px;
+    height: 250px;
+    width: 160px;
+    margin-top: 80px;
+    margin-left: 20px;
+    align-items: center;
   }
 }
 @media screen and (width <= 770px){
@@ -173,8 +185,11 @@ code {
     height: 380px;
   }
   .design{
-    height: 380px;
-    width: 150px;
+    height: 250px;
+    width: 160px;
+    margin-top: 80px;
+    margin-left: 20px;
+    align-items: center;
   }
   
 }
@@ -197,8 +212,11 @@ code {
     height: 350px;
   }
   .design{
-    height: 350px;
-    width: 150px;
+    height: 250px;
+    width: 160px;
+    margin-top: 80px;
+    margin-left: 20px;
+    align-items: center;
   }
   .WhiteCard{
     height: 50%;
@@ -220,8 +238,11 @@ code {
     height: 320px;
   }
   .design{
-    height: 320px;
-    width: 100px;
+    height: 170px;
+    width: 110px;
+    margin-top: 80px;
+    margin-left: 20px;
+    align-items: center;
   }
 }
 
@@ -242,8 +263,11 @@ code {
     height: 280px;
   }
   .design{
-    height: 280px;
-    width: 100px;
+    height: 170px;
+    width: 110px;
+    margin-top: 80px;
+    margin-left: 20px;
+    align-items: center;
   }
 }
 
@@ -256,17 +280,33 @@ code {
   }
   .Image{
     width: auto;
-    height: 280px;
+    height: 380px;
   }
   .design{
-    height: 280px;
-    width: 80px;
+    display: none;
+  }
+  .mobile_design{
+    height: 80px;
+    width: 300px;
+    margin: 20px;
   }
   .WhiteCard{
     height: auto;
   }
   .card{
-    height: 52%;
+    height: 130%;
+  }
+}
+
+@media screen and (width <= 478px) {
+  .Image{
+    margin: 10px;
+  }
+  .card{
+    height: 93%;
+  }
+  .card{
+    height: 135%;
   }
 }
 @media screen and (width <= 450px){
@@ -283,26 +323,16 @@ code {
   }
   .Image{
     width: auto;
-    height: 280px;
-    margin: 10px;
+    height: 380px;
   }
   .design{
-    height: 280px;
-    width: 80px;
+    display: none;
   }
   .WhiteCard{
-    height: 80%;
+    height: auto;
   }
   .card{
-    height: 93%;
-  }
-}
-@media screen and (width <= 478px) {
-  .Image{
-    margin: 10px;
-  }
-  .card{
-    height: 93%;
+    height: 135%;
   }
 }
 @media screen and (width <=400px){
@@ -319,18 +349,16 @@ code {
   }
   .Image{
     width: auto;
-    height: 290px;
+    height: 380px;
   }
   .design{
-    height: 300px;
-    width: 150px;
-    margin: 10px;
+    display: none;
   }
   .WhiteCard{
     height: 140%;
   }
   .card{
-    height: 153%;
+    height: 152%;
   }
 }
 
@@ -362,9 +390,7 @@ code {
     margin: auto;
   }
   .design{
-    height: 400px;
-    width: 200px;
-    margin: auto; 
+    display: none;
   }
   .card{
     height: 55%;
