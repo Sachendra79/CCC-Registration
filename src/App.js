@@ -7,6 +7,7 @@ import Faculty from './Pages/Faculty';
 import Register from './Pages/Register';
 import Navbar from './Components/Navbar';
 import Footer from './Components/Footer';
+import MainRegister from './Pages/MainRegister';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
    <Route  path='/faculty' element={<Faculty/>} />
    <Route path='/register' element={<Register/>} />
     <Route path='footer' element={<Footer/>}/>
+    <Route path='/register/mainregister' element={<MainRegister />} />
 
    </Routes>
    </div>

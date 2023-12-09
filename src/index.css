@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Coiny&family=Poppins:wght@700;800;900&family=Share+Tech&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Coiny&family=Poppins:wght@300;400;700;800;900&family=Share+Tech&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -83,6 +84,29 @@ code {
   padding: 10px;
   background-image: none;
 }
+
+.WhiteCard_Register {
+  background-color: #fff;
+  width: 93%;
+  border-radius: 40px;
+  height: 78%;
+  position: absolute;
+  left: 3.5%;
+  top: 15%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 10px;
+  background-image: none;
+}
+
+.Register_design{
+  transform: scale(0.8);
+  width: 1000px;
+  height: 220px;
+  position: absolute;
+  top: 25%;
+}
 .card {
   background-color: #d9d9d9;
   width: 96%;
@@ -102,7 +126,6 @@ code {
 .Rohit {
   height: 200px;
   position: absolute;
-  
 }
 .faculty-content h1 {
   font-family: share tech;
@@ -224,11 +247,11 @@ code {
   height: 311.97px;
   position: absolute;
   top: -24px;
-  left: 1030px;
+  left: 1015px;
   transform: scaleX(-1);
 }
 
-.WhiteCard section h4{
+.WhiteCard section h4 {
   font-size: 1.5vw;
   position: absolute;
   top: 210px;
@@ -237,6 +260,32 @@ code {
   font-weight: 600;
 }
 
+.WhiteCard section h5 {
+  font-size: 1vw;
+  position: absolute;
+  top: 240px;
+  left: 43%;
+  font-family: poppins;
+  font-weight: 400;
+}
+.WhiteCard section h6 {
+  font-size: 1vw;
+  position: absolute;
+  top: 260px;
+  left: 36%;
+  font-family: poppins;
+  font-weight: 400;
+}
+.WhiteCard section p {
+  font-size: 1vw;
+  position: absolute;
+  text-align: center;
+  top: 320px;
+  left: 0px;
+  margin: 30px;
+  font-family: poppins;
+  font-weight: 400;
+}
 /* media query */
 
 @media screen and (max-width: 299px) {
@@ -458,7 +507,7 @@ code {
   .card {
     height: 560px;
   }
-  .picture-card{
+  .picture-card {
     transform: scale(0.9);
     width: 150px;
     height: 190px;
@@ -570,7 +619,7 @@ code {
     height: 52%;
   }
   .card {
-    height: 435px;
+    height: 67%;
   }
 }
 @media screen and (width <= 650px) {
@@ -654,7 +703,7 @@ code {
   .card {
     height: 985px;
   }
-  .footer_facultypage{
+  .footer_facultypage {
     top: 1250px;
   }
 }
@@ -721,7 +770,7 @@ code {
   .card {
     height: 155%;
   }
-  .footer_facultypage{
+  .footer_facultypage {
     top: 175%;
   }
   .footer-container {
@@ -746,7 +795,7 @@ code {
     left: 24%;
     top: 15%;
   }
-  .footer_facultypage{
+  .footer_facultypage {
     top: 1400px;
   }
   .picture-card {
@@ -779,7 +828,7 @@ code {
   .picture-card {
     margin-left: -30px;
   }
-  .footer_facultypage{
+  .footer_facultypage {
     top: 145%;
   }
 }

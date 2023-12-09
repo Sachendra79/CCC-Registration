@@ -17,7 +17,7 @@ const Footer = () => {
       <div className='picture-card text-[#fff] bg-[#312f2f] '>
         <div className='picture w-40 bg-[#312f2f] '><img className='rounded-xl bg-[#312f2f]' src={Rishabh} alt="" /></div>
        <div className='picture-content w-40 bg-[#312f2f] '>
-        <p className='bg-[#312f2f] mx-5'>Risabh Gupta</p>
+        <p className='bg-[#312f2f] mx-7'>Risabh Gupta</p>
         <p className='bg-[#312f2f] mx-2'>(Event Coordinator)</p>
        </div>
 
@@ -25,7 +25,7 @@ const Footer = () => {
        <div className='picture-card text-[#fff] bg-[#312f2f] '>
         <div className='picture w-40 bg-[#312f2f] '><img className='rounded-xl bg-[#312f2f]' src={Priya} alt="" /></div>
        <div className='picture-content w-40 bg-[#312f2f] '>
-        <p className='bg-[#312f2f] mx-5'>Priya Sharma</p>
+        <p className='bg-[#312f2f] mx-7'>Priya Sharma</p>
         <p className='bg-[#312f2f] mx-2'>(Event Coordinator)</p>
        </div>
 
