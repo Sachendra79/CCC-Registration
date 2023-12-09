@@ -121,8 +121,7 @@ code {
 }
 
 .mobile_design{
-  width: 0px;
-  height: 0px;
+  display: none;
 }
 
 @media screen and (width <=1000px){
@@ -286,6 +285,7 @@ code {
     display: none;
   }
   .mobile_design{
+    display: block;
     height: 80px;
     width: 300px;
     margin: 20px;
@@ -381,18 +381,24 @@ code {
 
 @media screen and (width <= 290px) {
   .WhiteCard{
-    height: 45%;
+    height: auto;
     top: 20%;
   }
   .Image{
     width: auto;
-    height: 400px;
+    height: 340px;
     margin: auto;
   }
   .design{
     display: none;
   }
   .card{
-    height: 55%;
+    height: 130%;
+  }
+  .mobile_design{
+    display: block;
+    height: 50px;
+    width: 200px;
+    margin: 20px;
   }
 }
