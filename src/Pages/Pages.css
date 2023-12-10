@@ -947,6 +947,20 @@
       margin-top: 20px;
       width: 15rem;
     }
+    .WhiteCard section h4{
+      top: 200px;
+      left: 38.5%;
+    }
+    .WhiteCard section h5{
+      top: 225px;
+      left: 28%;
+    }
+    .WhiteCard section h6{
+      top: 245px;
+    }
+    .WhiteCard section p{
+      top: 265px;
+    }
   }
   
   @media screen and (width <=360px) {
@@ -969,11 +983,69 @@
     .picture-card {
       margin: -20px;
     }
+    .WhiteCard section h4{
+      top: 200px;
+      left: 38.5%;
+    }
+    .WhiteCard section h5{
+      top: 225px;
+      left: 26.5%;
+    }
+    .WhiteCard section h6{
+      top: 245px;
+    }
+    .WhiteCard section p{
+      top: 265px;
+    }
   }
   
+  @media screen and (height >= 1024px) {
+    .footer_facultypage{
+      top: 100%;
+    }
+    .card{
+      height: 90%;
+    }
+    .WhiteCard{
+      height: 80%;
+      top: 18%;
+    }
+    .about-content h1{
+      font-size: 1.5rem;
+    }   
+    .WhiteCard section p{
+      font-size: 1.2rem;
+    }
+    .WhiteCard section h4{
+      font-size: large;
+      left: 44.5%;
+    }
+    .WhiteCard section h5{
+      font-size: medium;
+      left: 36.5%;
+    }
+    .WhiteCard section h6{
+      font-size: small;
+      left: 26%;
+    }
+    .Left_design{
+      max-width: 40%;
+      max-height: 25%;
+      top: -2%;
+      left: 0%;
+    }
+    .Right_design{
+      max-width: 40%;
+      max-height: 25%;
+      transform: scaleX(-1);
+      top: -2%;
+      left: 69%;
+    }
+    
+  }
   @media screen and (width <= 290px) {
     .WhiteCard {
-      height: auto;
+      height: 120%;
       top: 20%;
     }
     .Image {
@@ -985,7 +1057,7 @@
       display: none;
     }
     .card {
-      height: 850px;
+      height: 130%;
     }
     .mobile_design {
       display: block;
@@ -998,6 +1070,20 @@
     }
     .footer_facultypage {
       top: 145%;
+    }
+    .WhiteCard section p{
+      top: 300px;
+      font-size: x-small;
+    }
+    .Rohit{
+      transform: scale(0.5);
+    }
+    .about-content section h4{
+      left: 34.5%;
+    }
+    .about-content section h5{
+      left: 15.5%;
+      align-items: center;
     }
   }
   
