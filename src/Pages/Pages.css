@@ -13,7 +13,7 @@
     background-color: #fff;
     width: 93%;
     border-radius: 40px;
-    height: 70%;
+    height: 95%;
     position: absolute;
     left: 3.5%;
     top: 23%;
@@ -28,7 +28,7 @@
     background-color: #fff;
     width: 93%;
     border-radius: 40px;
-    height: 78%;
+    height: 100%;
     position: absolute;
     left: 3.5%;
     top: 15%;
@@ -41,8 +41,8 @@
   
   .Register_design{
     transform: scale(0.8);
-    width: 65%;
-    height: 34%;
+    width: 60%;
+    height: 24.4%;
     position: absolute;
     top: 25%;
   }
@@ -69,7 +69,7 @@
   .faculty-content h1 {
     font-family: share tech;
     position: absolute;
-    left: 40%;
+    left: 37%;
     top: 14%;
     font-size: 40px;
     font-weight: 400;
@@ -494,6 +494,9 @@
     .WhiteCard {
       height: 480px;
     }
+    .WhiteCard_Register{
+      height: 500px;
+    }
     .Left_design{
       max-width: 30%;
       max-height: 45%;
@@ -522,8 +525,8 @@
     .Register_design{
       transform: scale(0.6);
       top: 40%;
-      width: 81.1%;
-      height: 31.4%;
+      width: 48.5rem;
+      height: 10.7rem;
     }
     .button_register{
       left: 35%;
@@ -544,17 +547,13 @@
       font-size: 1.8rem;
     } 
     .Register_design{
-      transform: scale(0.7);
+      transform: scale(0.6);
       top: 40%;
-      width: 95%;
-      height: 29.4%;
+      width: 48.5rem;
+      height: 10.7rem;
     }
     .button_register{
       left: 33%;
-    }
-    .card
-    {
-      height: 100%;
     }
   }
   @media screen and (width <=850px) {
@@ -581,20 +580,11 @@
     .Register_design{
       transform: scale(0.6);
       top: 40%;
-      width: 94.7%;
-      height: 31.3%;
+      width: 36.4rem;
+      height: 8rem;
     }
     .button_register{
       left: 31%;
-      top: 80%;
-    }
-    .card
-    {
-      height: 100%;
-    }
-    .footer_facultypage
-    {
-      top: 125%;
     }
   }
   @media screen and (width <=800px) {
@@ -784,6 +774,12 @@
       margin-top: 20px;
       width: 25rem;
     }
+    .Register_design{
+      transform: scale(0.6);
+      top: 40%;
+      width: 30rem;
+      height: 6.6rem;
+    }
   }
   @media screen and (width <= 600px) {
     .about-content h1 {
@@ -834,9 +830,6 @@
       height: 10%;
       font-size: 100%;
     }
-    .card{
-      height: 100%;
-    }
   }
   
   @media screen and (width <=500px) {
@@ -870,6 +863,15 @@
     }
     .footer_facultypage {
       top: 1250px;
+    }
+    .Register_design{
+      transform: scale(0.6);
+      top: 40%;
+      width: 27.8rem;
+      height: 6.1rem;
+    }
+    .WhiteCard_Register{
+      height: 900px;
     }
     .WhiteCard section h4{
       top: 22%;
@@ -905,16 +907,10 @@
       top: -1%;
       left: 69%;
     }
-    .Register_design{
-      transform: scale(0.7);
-      top: 40%;
-      width: 111%;
-      height: 19.3%;
-    }
     .button_register{
       left: 30%;
       width: 40%;
-      height: 10%;
+      height: 50px;
       font-size: 100%;
     }
   }
@@ -930,11 +926,10 @@
       height: 1070px;
     }
     .Register_design{
-      /* transform: scale(0.4); */
+      transform: scale(0.6);
       top: 40%;
-      width: 130%;
-      height: 19.5%;
-      scale: 1.2;
+      width: 27.8rem;
+      height: 6.1rem;
     }
   }
   @media screen and (width <= 450px) {
@@ -965,12 +960,21 @@
     .Left_register{
       width: 20rem;
     }
+    .WhiteCard_Register{
+      height: 130%;
+    }
     .Right_register{
       margin-top: 20px;
       width: 20rem;
     }
     .footer_facultypage{
       top: 110%;
+    }
+    .Register_design{
+      transform: scale(0.6);
+      top: 40%;
+      width: 22.88rem;
+      height: 5rem;
     }
   }
   @media screen and (width <=400px) {
@@ -1014,10 +1018,26 @@
       margin-top: 20px;
       width: 15rem;
     }
-    .link{
-      font-size: 0.5rem;
+    .WhiteCard section h4{
+      top: 200px;
+      left: 38.5%;
     }
-
+    .WhiteCard section h5{
+      top: 225px;
+      left: 28%;
+    }
+    .WhiteCard section h6{
+      top: 245px;
+    }
+    .WhiteCard section p{
+      top: 265px;
+    }
+    .Register_design{
+      transform: scale(0.4);
+      top: 40%;
+      width: 800px;
+      height: 5rem;
+    }
   }
   
   @media screen and (width <=360px) {
@@ -1040,12 +1060,77 @@
     .picture-card {
       margin: -20px;
     }
-   
+    .WhiteCard section h4{
+      top: 200px;
+      left: 38.5%;
+    }
+    .WhiteCard section h5{
+      top: 225px;
+      left: 26.5%;
+    }
+    .WhiteCard section h6{
+      top: 245px;
+    }
+    .WhiteCard section p{
+      top: 265px;
+    }
+    .Register_design{
+      transform: scale(0.5);
+      top: 40%;
+      width: 910px;
+      height: 71px;
+    }
   }
   
+  @media screen and (height >= 1024px) {
+    .footer_facultypage{
+      top: 100%;
+    }
+    .card{
+      height: 90%;
+    }
+    .WhiteCard{
+      height: 80%;
+      top: 18%;
+    }
+    .about-content h1{
+      font-size: 1.5rem;
+    }   
+    .WhiteCard section p{
+      font-size: 1.2rem;
+    }
+    .WhiteCard section h4{
+      font-size: large;
+      left: 44.5%;
+    }
+    .WhiteCard section h5{
+      font-size: medium;
+      left: 36.5%;
+    }
+    .WhiteCard section h6{
+      font-size: small;
+      left: 26%;
+    }
+    .Left_design{
+      max-width: 40%;
+      max-height: 25%;
+      top: -2%;
+      left: 0%;
+    }
+    .Right_design{
+      max-width: 40%;
+      max-height: 25%;
+      transform: scaleX(-1);
+      top: -2%;
+      left: 69%;
+    }
+    .WhiteCard_Register{
+      height: 800px;
+    }
+  }
   @media screen and (width <= 290px) {
     .WhiteCard {
-      height: auto;
+      height: 120%;
       top: 20%;
     }
     .Image {
@@ -1057,7 +1142,7 @@
       display: none;
     }
     .card {
-      height: 85%;
+      height: 130%;
     }
     .mobile_design {
       display: block;
@@ -1070,6 +1155,20 @@
     }
     .footer_facultypage {
       top: 150%;
+    }
+    .WhiteCard section p{
+      top: 300px;
+      font-size: x-small;
+    }
+    .Rohit{
+      transform: scale(0.5);
+    }
+    .about-content section h4{
+      left: 34.5%;
+    }
+    .about-content section h5{
+      left: 15.5%;
+      align-items: center;
     }
   }
   

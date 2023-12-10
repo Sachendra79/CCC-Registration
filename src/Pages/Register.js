@@ -16,7 +16,7 @@ const Register = () => {
           <img src={About_Design} alt="Rohit" className="Right_design"/>
           <img  src={RegisterPage} alt="Rohit" className="Register_design register-design2"/>
           <form action='/register/mainregister'>
-           <button className='button_register bg-[black] rounded-[10px] absolute left-[550px] top-[450px] w-[300px] h-[64px] font-poppins text-white font-normal text-2xl'>Register Now!</button>
+           <button className='button_register bg-[black] rounded-[10px] absolute left-[36.5%] top-[70%] w-[300px] h-[64px] font-poppins text-white font-normal text-2xl'>Register Now!</button>
           </form>
         </div>
         </div>
