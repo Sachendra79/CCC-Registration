@@ -41,8 +41,8 @@
   
   .Register_design{
     transform: scale(0.8);
-    width: 1000px;
-    height: 220px;
+    width: 65%;
+    height: 34%;
     position: absolute;
     top: 25%;
   }
@@ -482,6 +482,15 @@
       width: 150px;
       height: 190px;
     }
+    .Register_design{
+      transform: scale(0.6);
+      top: 40%;
+      width: 81.1%;
+      height: 31.4%;
+    }
+    .button_register{
+      left: 35%;
+    }
   }
   @media screen and (width <=950px) {
     .design {
@@ -497,6 +506,15 @@
     .about-content h1{
       font-size: 1.8rem;
     } 
+    .Register_design{
+      transform: scale(0.6);
+      top: 40%;
+      width: 85%;
+      height: 29.4%;
+    }
+    .button_register{
+      left: 33%;
+    }
   }
   @media screen and (width <=850px) {
     .design {
@@ -519,6 +537,15 @@
     .about-content h1{
       font-size: 1.5rem;
     } 
+    .Register_design{
+      transform: scale(0.6);
+      top: 40%;
+      width: 94.7%;
+      height: 31.3%;
+    }
+    .button_register{
+      left: 31%;
+    }
   }
   @media screen and (width <=800px) {
     .about-content h1 {
@@ -738,6 +765,12 @@
       margin-left: 20px;
       align-items: center;
     }
+    .button_register{
+      left: 30%;
+      width: 40%;
+      height: 10%;
+      font-size: 100%;
+    }
   }
   
   @media screen and (width <=500px) {
@@ -806,6 +839,18 @@
       top: -1%;
       left: 69%;
     }
+    .Register_design{
+      transform: scale(0.7);
+      top: 40%;
+      width: 111%;
+      height: 19.3%;
+    }
+    .button_register{
+      left: 30%;
+      width: 40%;
+      height: 10%;
+      font-size: 100%;
+    }
   }
   
   @media screen and (width <= 478px) {
@@ -817,6 +862,12 @@
     }
     .card {
       height: 1070px;
+    }
+    .Register_design{
+      transform: scale(0.65);
+      top: 40%;
+      width: 120%;
+      height: 19.5%;
     }
   }
   @media screen and (width <= 450px) {
