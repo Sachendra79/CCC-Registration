@@ -41,8 +41,8 @@
   
   .Register_design{
     transform: scale(0.8);
-    width: 1000px;
-    height: 220px;
+    width: 65%;
+    height: 34%;
     position: absolute;
     top: 25%;
   }
@@ -252,7 +252,7 @@
     }
   
     .navbar-container .link {
-      font-size: 0.6rem;
+      font-size: 0.5rem;
     }
     .picture-card {
       scale: 0.4;
@@ -310,12 +310,13 @@
     .some {
       flex-direction: column;
     }
+   
   }
   
   @media only screen and (max-width: 600px) and (min-width: 300px) {
     /* Styles for extra small devices */
     .navbar-container .link {
-      font-size: 0.8rem;
+      font-size: 1rem;
     }
   
     .footer-container {
@@ -379,6 +380,9 @@
     .some {
       flex-direction: column;
     }
+    .navbar-container .link{
+      font-size: 0.8rem;
+    }
   }
   
   @media only screen and (min-width: 601px) and (max-width: 768px) {
@@ -439,6 +443,39 @@
       font-size: 20px;
     }
   }
+
+  @media screen and (width <=1100px) {
+.card{
+  height: 100%;
+}
+  .footer_facultypage
+  {
+    top: 120%;
+  }
+
+   .button_register{
+    left: 35%;
+    top: 80%;
+  }
+  .Left_design{
+    scale: 0.5;
+    top: -15%;
+    left: -5%;
+  }
+  .Right_design
+  {
+    scale: 0.5;
+    top: -15%;
+    right: -10%;
+  }
+  .Register_design{
+    scale: 1;
+    width: 100%;
+    top: 30%;
+  }
+}
+
+  
   
   @media screen and (width <=1000px) {
     .about-content h1 {
@@ -482,6 +519,15 @@
       width: 150px;
       height: 190px;
     }
+    .Register_design{
+      transform: scale(0.6);
+      top: 40%;
+      width: 81.1%;
+      height: 31.4%;
+    }
+    .button_register{
+      left: 35%;
+    }
   }
   @media screen and (width <=950px) {
     .design {
@@ -497,6 +543,19 @@
     .about-content h1{
       font-size: 1.8rem;
     } 
+    .Register_design{
+      transform: scale(0.7);
+      top: 40%;
+      width: 95%;
+      height: 29.4%;
+    }
+    .button_register{
+      left: 33%;
+    }
+    .card
+    {
+      height: 100%;
+    }
   }
   @media screen and (width <=850px) {
     .design {
@@ -519,6 +578,24 @@
     .about-content h1{
       font-size: 1.5rem;
     } 
+    .Register_design{
+      transform: scale(0.6);
+      top: 40%;
+      width: 94.7%;
+      height: 31.3%;
+    }
+    .button_register{
+      left: 31%;
+      top: 80%;
+    }
+    .card
+    {
+      height: 100%;
+    }
+    .footer_facultypage
+    {
+      top: 125%;
+    }
   }
   @media screen and (width <=800px) {
     .about-content h1 {
@@ -586,7 +663,7 @@
       top: -3%;
     }
     .card {
-      height: 75%;
+      height: 100%;
     }
     .WhiteCard section h4{
       top: 35%;
@@ -606,6 +683,19 @@
     .WhiteCard section p{
       font-size: small;
       top: 50%;
+    }
+    .footer_facultypage
+    {
+      top: 120%;
+    }
+    .button_register
+    {
+      top: 80%;
+    }
+    .Register_design
+    {
+      width: 120%;
+      scale: 1.2;
     }
   }
   @media screen and (width <= 730px) {
@@ -738,6 +828,15 @@
       margin-left: 20px;
       align-items: center;
     }
+    .button_register{
+      left: 30%;
+      width: 40%;
+      height: 10%;
+      font-size: 100%;
+    }
+    .card{
+      height: 100%;
+    }
   }
   
   @media screen and (width <=500px) {
@@ -806,6 +905,18 @@
       top: -1%;
       left: 69%;
     }
+    .Register_design{
+      transform: scale(0.7);
+      top: 40%;
+      width: 111%;
+      height: 19.3%;
+    }
+    .button_register{
+      left: 30%;
+      width: 40%;
+      height: 10%;
+      font-size: 100%;
+    }
   }
   
   @media screen and (width <= 478px) {
@@ -817,6 +928,13 @@
     }
     .card {
       height: 1070px;
+    }
+    .Register_design{
+      /* transform: scale(0.4); */
+      top: 40%;
+      width: 130%;
+      height: 19.5%;
+      scale: 1.2;
     }
   }
   @media screen and (width <= 450px) {
@@ -842,7 +960,7 @@
       height: 125%;
     }
     .card {
-      height: 140%;
+      height: 90%;
     }
     .Left_register{
       width: 20rem;
@@ -852,7 +970,7 @@
       width: 20rem;
     }
     .footer_facultypage{
-      top: 170%;
+      top: 110%;
     }
   }
   @media screen and (width <=400px) {
@@ -878,10 +996,10 @@
       height: 140%;
     }
     .card {
-      height: 155%;
+      height: 100%;
     }
     .footer_facultypage {
-      top: 175%;
+      top: 120%;
     }
     .footer-container {
       gap: -20px;
@@ -896,6 +1014,10 @@
       margin-top: 20px;
       width: 15rem;
     }
+    .link{
+      font-size: 0.5rem;
+    }
+
   }
   
   @media screen and (width <=360px) {
@@ -913,11 +1035,12 @@
       top: 15%;
     }
     .footer_facultypage {
-      top: 1400px;
+      top: 100%x;
     }
     .picture-card {
       margin: -20px;
     }
+   
   }
   
   @media screen and (width <= 290px) {
@@ -934,7 +1057,7 @@
       display: none;
     }
     .card {
-      height: 850px;
+      height: 85%;
     }
     .mobile_design {
       display: block;
@@ -946,7 +1069,7 @@
       margin-left: -30px;
     }
     .footer_facultypage {
-      top: 145%;
+      top: 100%;
     }
   }
   
