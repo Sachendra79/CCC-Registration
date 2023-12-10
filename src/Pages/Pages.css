@@ -172,6 +172,10 @@
     position: absolute;
     top: 800px;
   }
+  .footer_Registrypage {
+    position: absolute;
+    top: 800px;
+  }
   
   .Left_design {
     width: 401.09px;
@@ -216,7 +220,7 @@
     font-weight: 400;
   }
   .WhiteCard section p {
-    font-size: 1vw;
+    font-size: 1.3vw;
     position: absolute;
     text-align: center;
     top: 320px;
@@ -224,6 +228,21 @@
     margin: 30px;
     font-family: poppins;
     font-weight: 400;
+  }
+
+  .Transperent_card{
+    background-color: #1E1E1EB2;
+    width: 96%;
+    height: 40rem;
+    position: absolute;
+    /* display: flex; */
+    left: 2%;
+    top: 12%;
+    border-radius: 20px;
+  }
+  .h1_name_RegisterPage{
+    font-family: Share tech;
+    
   }
   /* media query */
   
@@ -476,6 +495,12 @@
       width: auto;
       height: 400px;
     }
+    .Left_register{
+      width: 20rem;
+    }
+    .Right_register{
+      width: 20rem;
+    }
   }
   @media screen and (width <=800px) {
     .about-content h1 {
@@ -560,6 +585,12 @@
     .card {
       height: 67%;
     }
+    .Left_register{
+      width: 15rem;
+    }
+    .Right_register{
+      width: 15rem;
+    }
   }
   @media screen and (width <= 650px) {
     .Image {
@@ -570,6 +601,23 @@
       height: 200px;
       width: 140px;
       align-items: center;
+    }
+    .Register_form{
+      align-items: center;
+      flex-direction: column;
+    }
+    .Transperent_card{
+      height: 125%;
+    }
+    .footer_Registrypage{
+      top: 1220px;
+    }
+    .Left_register{
+      width: 25rem;
+    }
+    .Right_register{
+      margin-top: 20px;
+      width: 25rem;
     }
   }
   @media screen and (width <= 600px) {
@@ -683,6 +731,13 @@
     .card {
       height: 1070px;
     }
+    .Left_register{
+      width: 20rem;
+    }
+    .Right_register{
+      margin-top: 20px;
+      width: 20rem;
+    }
   }
   @media screen and (width <=400px) {
     .about-content h1 {
@@ -717,6 +772,13 @@
     }
     .picture-card {
       margin: -15px;
+    }
+    .Left_register{
+      width: 15rem;
+    }
+    .Right_register{
+      margin-top: 20px;
+      width: 15rem;
     }
   }
   
