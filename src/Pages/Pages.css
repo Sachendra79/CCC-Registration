@@ -13,7 +13,7 @@
     background-color: #fff;
     width: 93%;
     border-radius: 40px;
-    height: 70%;
+    height: 95%;
     position: absolute;
     left: 3.5%;
     top: 23%;
@@ -457,6 +457,9 @@
     .WhiteCard {
       height: 480px;
     }
+    .WhiteCard_Register{
+      height: 500px;
+    }
     .Left_design{
       max-width: 30%;
       max-height: 45%;
@@ -817,6 +820,9 @@
       width: 27.8rem;
       height: 6.1rem;
     }
+    .WhiteCard_Register{
+      height: 900px;
+    }
     .WhiteCard section h4{
       top: 22%;
       left: 41%;
@@ -854,7 +860,7 @@
     .button_register{
       left: 30%;
       width: 40%;
-      height: 10%;
+      height: 50px;
       font-size: 100%;
     }
   }
@@ -903,6 +909,9 @@
     }
     .Left_register{
       width: 20rem;
+    }
+    .WhiteCard_Register{
+      height: 130%;
     }
     .Right_register{
       margin-top: 20px;
