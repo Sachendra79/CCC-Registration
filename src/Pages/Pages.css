@@ -310,7 +310,6 @@
     .some {
       flex-direction: column;
     }
-   
   }
   
   @media only screen and (max-width: 600px) and (min-width: 300px) {
@@ -380,9 +379,6 @@
     .some {
       flex-direction: column;
     }
-    .navbar-container .link{
-      font-size: 0.8rem;
-    }
   }
   
   @media only screen and (min-width: 601px) and (max-width: 768px) {
@@ -443,39 +439,6 @@
       font-size: 20px;
     }
   }
-
-  @media screen and (width <=1100px) {
-.card{
-  height: 100%;
-}
-  .footer_facultypage
-  {
-    top: 120%;
-  }
-
-   .button_register{
-    left: 35%;
-    top: 80%;
-  }
-  .Left_design{
-    scale: 0.5;
-    top: -15%;
-    left: -5%;
-  }
-  .Right_design
-  {
-    scale: 0.5;
-    top: -15%;
-    right: -10%;
-  }
-  .Register_design{
-    scale: 1;
-    width: 100%;
-    top: 30%;
-  }
-}
-
-  
   
   @media screen and (width <=1000px) {
     .about-content h1 {
@@ -653,7 +616,7 @@
       top: -3%;
     }
     .card {
-      height: 100%;
+      height: 75%;
     }
     .WhiteCard section h4{
       top: 35%;
@@ -673,19 +636,6 @@
     .WhiteCard section p{
       font-size: small;
       top: 50%;
-    }
-    .footer_facultypage
-    {
-      top: 120%;
-    }
-    .button_register
-    {
-      top: 80%;
-    }
-    .Register_design
-    {
-      width: 120%;
-      scale: 1.2;
     }
   }
   @media screen and (width <= 730px) {
@@ -955,7 +905,7 @@
       height: 125%;
     }
     .card {
-      height: 90%;
+      height: 140%;
     }
     .Left_register{
       width: 20rem;
@@ -968,7 +918,7 @@
       width: 20rem;
     }
     .footer_facultypage{
-      top: 110%;
+      top: 170%;
     }
     .Register_design{
       transform: scale(0.6);
@@ -1000,10 +950,10 @@
       height: 140%;
     }
     .card {
-      height: 100%;
+      height: 155%;
     }
     .footer_facultypage {
-      top: 120%;
+      top: 175%;
     }
     .footer-container {
       gap: -20px;
@@ -1055,7 +1005,7 @@
       top: 15%;
     }
     .footer_facultypage {
-      top: 100%x;
+      top: 1400px;
     }
     .picture-card {
       margin: -20px;
@@ -1154,7 +1104,7 @@
       margin-left: -30px;
     }
     .footer_facultypage {
-      top: 150%;
+      top: 145%;
     }
     .WhiteCard section p{
       top: 300px;

@@ -1,36 +1,86 @@
+
 import React, { useState } from "react";
 import Footer from "../Components/Footer";
 import ReCAPTCHA from "react-google-recaptcha";
 import "./Pages.css";
+import axios from "axios"
+import toast from "react-hot-toast";
+import ReactLoading from "react-loading"
 
 function MainRegister() {
   const [formData, setFormData] = useState({
     name: "",
-    student_no: "",
+    studentNumber: "",
     branch: "",
     email: "",
-    phone_number: "",
+    phone: "",
     gender: "",
     year: "",
     residence: "",
-    captcha: "",
+    section:"",
   });
+  const [loading , setLoading] =useState(false);
 
   const onChange = (e) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
   };
 
-  const submitHandler = (e) => {
-    e.preventDefault();
-    console.log(formData);
-    
-  };
-
+ 
   function onChange1(value) {
         console.log("Captcha value:", value);
-      setFormData({...formData , captcha : value});
+      // setFormData({...formData , captcha : value});
      }
+
+     const submitHandler = async (e) => {
+      e.preventDefault();
+         
+      const variableOrder = [
+        "name",
+        "gender",
+        "studentNumber",
+        "year",
+        "residence",
+        "branch",
+        "section",
+        "phone",
+        "email",
+      ];
+
+      const orderedFormData = {
+        name: formData.name,
+        gender: formData.gender,
+        studentNumber: formData.studentNumber,
+        year: formData.year,
+        residence: formData.residence,
+        branch: formData.branch,
+        section: formData.section,
+        phone: formData.phone,
+        email: formData.email,
+      };
+      
+
+
+    try {
+      setLoading(true);
+      const response = await axios.post(
+        "https://v2-ccc1.onrender.com/api/students/register",
+        orderedFormData
+      );
+
+      console.log(response.data);
+
+    } catch (error) {
+      toast.error("submission failed");
+      console.error("Error submitting registration:", error);
+   
+    }
+    setLoading(false);
+      console.log(formData);
+      
+    };
+  
+
 
   return (
     <div>
@@ -71,9 +121,9 @@ function MainRegister() {
                 <label className="text-white">Student Number:</label>
                 <input
                   type="number"
-                  name="student_no"
+                  name="studentNumber"
                   className="h-[2rem] rounded"
-                  value={formData.student_no}
+                  value={formData.studentNumber}
                   onChange={onChange}
                 />
 
@@ -144,9 +194,9 @@ function MainRegister() {
                 <label className="text-white">Phone Number:</label>
                 <input
                   type="number"
-                  name="phone_number"
+                  name="phone"
                   className="h-[2rem] rounded"
-                  value={formData.phone_number}
+                  value={formData.phone}
                   onChange={onChange}
                 />
 
@@ -162,15 +212,15 @@ function MainRegister() {
                 <br></br>
                 <ReCAPTCHA
                   className="REcaptcha_change"
-                  sitekey="6Lcd2CMpAAAAAKLqwdxjTgnWwzSgAGEgtl0BVOng"
+                  sitekey="6Le_np0mAAAAALMOBxjRyHfzDwsn3QLDIKZz7bMg"
                   onChange={onChange1}
-                  value={formData.captcha}
+                  value={formData.recaptchaToken}
                 />
               </section>
             </div>
             <div className="flex justify-center">
               <button className="Submit_Button bg-white w-[200px] h-[60px] rounded-lg text-xl">
-                Register Now!
+              { loading ? <ReactLoading type='spinningBubbles'color="#000" height={35} width={35} className='loader  ml-20' /> : "Register Now!"}
               </button>
             </div>
           </form>
