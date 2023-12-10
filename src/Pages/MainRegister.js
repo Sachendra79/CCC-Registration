@@ -261,7 +261,7 @@ function MainRegister() {
                   <option value="IT">IT</option>
                   <option value="EC">EC</option>
                   <option value="Mechanical">Mechanical</option>
-                  <option value="EC">EC</option>
+                  <option value="CE">CE</option>
                 </select>
 
                 <br></br>
@@ -301,7 +301,8 @@ function MainRegister() {
                 <br></br>
                 <ReCAPTCHA
                   className="REcaptcha_change"
-                  sitekey="6Lf5WywpAAAAAGYeoq4F7-o1ffx2A-RI5eVj5ugq"
+                  // sitekey="6Lf5WywpAAAAAGYeoq4F7-o1ffx2A-RI5eVj5ugq"
+                  sitekey="6Lcd2CMpAAAAAKLqwdxjTgnWwzSgAGEgtl0BVOng"
                   onChange={onChange1}
                   value={formData.captcha}
                 />
