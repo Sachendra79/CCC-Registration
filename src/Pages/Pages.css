@@ -178,19 +178,19 @@
   }
   
   .Left_design {
-    width: 401.09px;
-    height: 311.97px;
+    width: 31%;
+    height: 63%;
     position: absolute;
-    top: -24px;
-    left: 0px;
+    top: -4.5%;
+    left: -0.2%;
   }
   
   .Right_design {
-    width: 401.09px;
-    height: 311.97px;
+    width: 31%;
+    height: 63%;
     position: absolute;
-    top: -24px;
-    left: 1015px;
+    top: -4.5%;
+    left: 69.2%;
     transform: scaleX(-1);
   }
   
@@ -457,6 +457,18 @@
     .WhiteCard {
       height: 480px;
     }
+    .Left_design{
+      max-width: 30%;
+      max-height: 45%;
+      top: -3%;
+    }
+    .Right_design{
+      max-width: 30%;
+      max-height: 45%;
+      transform: scaleX(-1);
+      top: -3%;
+      left: 70%;
+    }
     .design {
       height: 450px;
       width: 283px;
@@ -480,8 +492,11 @@
       align-items: center;
     }
     .WhiteCard {
-      height: auto;
+      height: 60%;
     }
+    .about-content h1{
+      font-size: 1.8rem;
+    } 
   }
   @media screen and (width <=850px) {
     .design {
@@ -501,6 +516,9 @@
     .Right_register{
       width: 20rem;
     }
+    .about-content h1{
+      font-size: 1.5rem;
+    } 
   }
   @media screen and (width <=800px) {
     .about-content h1 {
@@ -525,6 +543,21 @@
       margin-left: 20px;
       align-items: center;
     }
+    .WhiteCard section h4{
+      font-size: medium;
+    }
+    .WhiteCard section h5{
+      font-size: small;
+      left: 39%;
+    }
+    .WhiteCard section h6{
+      font-size: small;
+      left: 28%;
+    }
+    .WhiteCard section p{
+      font-size: small;
+      top: 57%;
+    }
   }
   @media screen and (width <= 770px) {
     .about-content h1 {
@@ -548,8 +581,31 @@
       margin-left: 20px;
       align-items: center;
     }
+    .Rohit{
+      transform: scale(0.7);
+      top: -3%;
+    }
     .card {
-      height: 482px;
+      height: 75%;
+    }
+    .WhiteCard section h4{
+      top: 35%;
+      left: 44.5%;
+      font-size: medium;
+    }
+    .WhiteCard section h5{
+      top: 40%;
+      font-size: small;
+      left: 38%;
+    }
+    .WhiteCard section h6{
+      top: 45%;
+      font-size: small;
+      left: 27%;
+    }
+    .WhiteCard section p{
+      font-size: small;
+      top: 50%;
     }
   }
   @media screen and (width <= 730px) {
@@ -590,6 +646,25 @@
     }
     .Right_register{
       width: 15rem;
+    }
+    .WhiteCard section h4{
+      top: 39%;
+      left: 44%;
+      font-size: medium;
+    }
+    .WhiteCard section h5{
+      top: 44%;
+      font-size: small;
+      left: 37.5%;
+    }
+    .WhiteCard section h6{
+      top: 49%;
+      font-size: small;
+      left: 26%;
+    }
+    .WhiteCard section p{
+      font-size: x-small;
+      top: 55%;
     }
   }
   @media screen and (width <= 650px) {
@@ -637,6 +712,7 @@
       margin-left: 20px;
       align-items: center;
     }
+
   }
   
   @media screen and (width <= 550px) {
@@ -685,13 +761,50 @@
       margin: 20px;
     }
     .WhiteCard {
-      height: auto;
+      height: 115%;
+    }
+    .Rohit{
+      top: 2%;
     }
     .card {
       height: 985px;
     }
     .footer_facultypage {
       top: 1250px;
+    }
+    .WhiteCard section h4{
+      top: 22%;
+      left: 41%;
+      font-size: medium;
+    }
+    .WhiteCard section h5{
+      font-size: small;
+      top: 25%;
+      left: 31%;
+    }
+    .WhiteCard section h6{
+      top: 28%;
+      font-size: small;
+      text-align: center;
+      left: 11%;
+      width: 80%;
+    }
+    .WhiteCard section p{
+      font-size: medium;
+      top: 30%;
+    }
+    .Left_design{
+      max-width: 40%;
+      max-height: 15%;
+      top: -1%;
+      left: 0%;
+    }
+    .Right_design{
+      max-width: 40%;
+      max-height: 15%;
+      transform: scaleX(-1);
+      top: -1%;
+      left: 69%;
     }
   }
   
@@ -726,10 +839,10 @@
       display: none;
     }
     .WhiteCard {
-      height: auto;
+      height: 125%;
     }
     .card {
-      height: 1070px;
+      height: 140%;
     }
     .Left_register{
       width: 20rem;
@@ -737,6 +850,9 @@
     .Right_register{
       margin-top: 20px;
       width: 20rem;
+    }
+    .footer_facultypage{
+      top: 170%;
     }
   }
   @media screen and (width <=400px) {
