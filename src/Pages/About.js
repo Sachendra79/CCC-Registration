@@ -19,7 +19,7 @@ const About = () => {
             <h4>Rohit Negi</h4>
             <h5>IIT Guwahati | Ex- UBER SDE |</h5>
             <h6>Got Highest Placement in India of 2Cr+ | 150K+ Youtube</h6>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed accumsan eu ex vel mattis. Integer euismod vel purus vitae hendrerit. Fusce eget justo ac quam sagittis ullamcorper eu a dui. Vivamus non arcu vel risus laoreet commodo. Sed imperdiet ante eu nisl vestibulum, sit amet commodo nunc lacinia. In hac habitasse platea dictumst. Pellentesque ut neque a justo eleifend consectetur. Nulla facilisi. Fusce nec tellus vel eros pharetra laoreet id nec mauris</p>
+            <p>Rohit Negi, a software engineer from Kotdwar, Uttarakhand, overcame academic challenges to secure a job at Uber with a starting salary of Rs 96 lakh. Despite average grades, his GATE score got him into IIT Guwahati for an MTech degree. Hailing from a lower-middle-class family, the news of his Rs 2.05 crore job offer brought immense joy. Apart from his job, Rohit runs a YouTube channel with 150k+ subscribers, sharing insights on GATE and placements. He is also the Founder of CoderArmy, a heartfelt problem solver, instructor, and visionary leader striving to make a positive impact. His journey, marked by hard work, resulted in the highest placement in India of 2 Cr+. Rohit is working hard to make technology better and more impactful for society.</p>
           </section>
         </div>
       </div>
