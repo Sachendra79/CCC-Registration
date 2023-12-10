@@ -1,6 +1,7 @@
 import React from 'react'
 import Footer from '../Components/Footer'
 import Card from '../Components/Card'
+import './Pages.css'
 
 function MainRegister() {
   return (

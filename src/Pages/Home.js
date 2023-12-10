@@ -5,6 +5,8 @@ import Rohit from "../assets/Ellipse 40.svg";
 import location from "../assets/Vector(1).svg";
 import calender from "../assets/Vector(3).svg";
 import { useNavigate } from "react-router-dom";
+import './Pages.css'
+
 const Home = () => {
   const navigate = useNavigate();
 

@@ -3,6 +3,7 @@ import Card from '../Components/Card'
 import Rohit from '../assets/Rohit.svg'
 import About_Design from '../assets/AboutPage_design.svg'
 import Footer from "../Components/Footer";
+import './Pages.css'
 
 const About = () => {
   return (

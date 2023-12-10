@@ -3,6 +3,7 @@ import Footer from '../Components/Footer'
 import Card from '../Components/Card'
 import About_Design from '../assets/AboutPage_design.svg'
 import RegisterPage from '../assets/RegisterPage.svg'
+import './Pages.css'
 
 const Register = () => {
   return (

@@ -5,6 +5,7 @@ import mam_card from '../assets/Mam_Card.svg'
 import middle from "../assets/Image_middle.svg";
 import mobile from '../assets/Mobile_cover.svg'
 import Footer from '../Components/Footer'
+import './Pages.css'
 
 const Faculty = () => {
   return (
