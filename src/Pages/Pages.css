@@ -7,7 +7,8 @@
 
 
 .design {
-    width: 340px;
+  width: 347.5px;
+  transform: scale(0.8);
   }
   .WhiteCard {
     background-color: #fff;
@@ -478,7 +479,7 @@
       margin: 10px;
     }
     .card {
-      height: 560px;
+      height: 600px;
     }
     .picture-card {
       transform: scale(0.9);
@@ -526,6 +527,9 @@
     }
     .button_register{
       left: 33%;
+    }
+    .card{
+      height: 650px;
     }
   }
   @media screen and (width <=850px) {
