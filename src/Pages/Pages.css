@@ -315,7 +315,7 @@
   @media only screen and (max-width: 600px) and (min-width: 300px) {
     /* Styles for extra small devices */
     .navbar-container .link {
-      font-size: 1rem;
+      font-size: 0.8rem;
     }
   
     .footer-container {
