@@ -26,7 +26,7 @@ const Footer = () => {
         </div>
         <div className="picture-card text-[#fff] bg-[#312f2f] ">
           <div className="picture w-40 bg-[#312f2f] ">
-            <img className="rounded-xl bg-[#312f2f]" src={Priya} alt="" />
+            <img className=" .priya_maamphoto rounded-xl bg-[#312f2f]" src={Priya} alt="" />
           </div>
           <div className="picture-content w-40 bg-[#312f2f] ">
             <p className="bg-[#312f2f] mx-7">Priya Sharma</p>
@@ -35,7 +35,7 @@ const Footer = () => {
         </div>
 
         <div className="picture-card text-[#fff] bg-[#312f2f] ">
-          <div className="picture w-40 bg-[#312f2f] ">
+          <div className="picture w-40 h-30 bg-[#312f2f] ">
             <img className="rounded-xl bg-[#312f2f]" src={Sarthak} alt="" />
           </div>
           <div className="picture-content w-40 bg-[#312f2f] ">
@@ -45,9 +45,9 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="footer-below flex justify-evenly flex-wrap">
+      <div className="footer-below flex justify-around flex-wrap absolute top-[120%]">
         <div className="footer-links text-[#fff]">
-          <div className="flex gap-3 m-5">
+          <div className="flex gap-1">
             <div className="logo-image">
               {" "}
               <img src={akgec} alt="" />
@@ -83,8 +83,8 @@ const Footer = () => {
               <img src={call} alt="" />
             </div>
             <div>
-              <p>+91 7060484531</p>
-              <p>+91 7905146634</p>
+              <p>+919120616821</p>
+              <p>+917355648107</p>
             </div>
           </div>
         </div>

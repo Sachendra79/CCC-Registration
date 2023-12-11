@@ -7,7 +7,8 @@
 
 
 .design {
-    width: 340px;
+  width: 347.5px;
+  transform: scale(0.8);
   }
   .WhiteCard {
     background-color: #fff;
@@ -233,7 +234,7 @@
   .Transperent_card{
     background-color: #1E1E1EB2;
     width: 96%;
-    height: 40rem;
+    height: 42rem;
     position: absolute;
     /* display: flex; */
     left: 2%;
@@ -478,7 +479,7 @@
       margin: 10px;
     }
     .card {
-      height: 560px;
+      height: 600px;
     }
     .picture-card {
       transform: scale(0.9);
@@ -493,6 +494,15 @@
     }
     .button_register{
       left: 35%;
+    }
+    .some{
+      font-size: small;
+    }
+    .about_Rohitsir{
+      font-size: small;
+      width: 40%;
+      position: absolute;
+      left: 60%;
     }
   }
   @media screen and (width <=950px) {
@@ -517,6 +527,9 @@
     }
     .button_register{
       left: 33%;
+    }
+    .card{
+      height: 650px;
     }
   }
   @media screen and (width <=850px) {
@@ -712,7 +725,7 @@
       flex-direction: column;
     }
     .Transperent_card{
-      height: 125%;
+      height: 130%;
     }
     .footer_Registrypage{
       top: 1220px;
@@ -748,7 +761,19 @@
       margin-left: 20px;
       align-items: center;
     }
-
+    .some{
+      font-size: smaller;
+    }
+    .upside-left{
+      width: 80%;
+    }
+    .btn-pink{
+      left: 25%;
+      width: 250px;
+      height: 75px;
+      font-size: 23px;
+      font-weight: 400;
+    }
   }
   
   @media screen and (width <= 550px) {
@@ -863,6 +888,10 @@
       height: 50px;
       font-size: 100%;
     }
+    .btn-pink{
+      left: 22%;
+      top: 90%;
+    }
   }
   
   @media screen and (width <= 478px) {
@@ -926,6 +955,14 @@
       width: 22.88rem;
       height: 5rem;
     }
+    .about_Rohitsir{
+      width: 25%;
+      left: 75%;
+    }
+    .btn-pink{
+      left: 19%;
+      top: 90%;
+    }
   }
   @media screen and (width <=400px) {
     .about-content h1 {
@@ -988,6 +1025,13 @@
       width: 800px;
       height: 5rem;
     }
+    .navbar-container .link{
+      font-size: 13px
+    }
+    .btn-pink{
+      left: 13%;
+      top: 90%;
+    }
   }
   
   @media screen and (width <=360px) {
@@ -1029,6 +1073,14 @@
       top: 40%;
       width: 910px;
       height: 71px;
+    }
+    .navbar-container .link{
+      font-size: 9px
+    }
+    .btn-pink{
+      left: 15%;
+      top: 105%;
+      width: 200px;
     }
   }
   
@@ -1119,6 +1171,11 @@
     .about-content section h5{
       left: 15.5%;
       align-items: center;
+    }
+    .btn-pink{
+      left: 8%;
+      top: 105%;
+      width: 200px;
     }
   }
   
