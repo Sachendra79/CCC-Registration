@@ -18,7 +18,12 @@ function MainRegister() {
     year: "",
     residence: "",
     section:"",
+    
   });
+  const [data ,setData] = useState({
+    captcha:"",
+  })
+
   const [loading , setLoading] =useState(false);
 
   const onChange = (e) => {
@@ -29,35 +34,35 @@ function MainRegister() {
  
   function onChange1(value) {
         console.log("Captcha value:", value);
-      // setFormData({...formData , captcha : value});
+       setData({...data , captcha : value});
      }
 
      const submitHandler = async (e) => {
       e.preventDefault();
          
-      const variableOrder = [
-        "name",
-        "gender",
-        "studentNumber",
-        "year",
-        "residence",
-        "branch",
-        "section",
-        "phone",
-        "email",
-      ];
+      // const variableOrder = [
+      //   "name",
+      //   "gender",
+      //   "studentNumber",
+      //   "year",
+      //   "residence",
+      //   "branch",
+      //   "section",
+      //   "phone",
+      //   "email",
+      // ];
 
-      const orderedFormData = {
-        name: formData.name,
-        gender: formData.gender,
-        studentNumber: formData.studentNumber,
-        year: formData.year,
-        residence: formData.residence,
-        branch: formData.branch,
-        section: formData.section,
-        phone: formData.phone,
-        email: formData.email,
-      };
+      // const orderedFormData = {
+      //   name: formData.name,
+      //   gender: formData.gender,
+      //   studentNumber: formData.studentNumber,
+      //   year: formData.year,
+      //   residence: formData.residence,
+      //   branch: formData.branch,
+      //   section: formData.section,
+      //   phone: formData.phone,
+      //   email: formData.email,
+      // };
       
 
 
@@ -65,7 +70,7 @@ function MainRegister() {
       setLoading(true);
       const response = await axios.post(
         "https://v2-ccc1.onrender.com/api/students/register",
-        orderedFormData
+        formData
       );
 
       console.log(response.data);
@@ -153,7 +158,7 @@ function MainRegister() {
                   onChange={onChange}
                 >
                   <option value="select">Select</option>
-                  <option value="Hoster">Hostler</option>
+                  <option value="Hostler">Hostler</option>
                   <option value="Dayscholar">Day Scholar</option>
                 </select>
               </section>
@@ -212,9 +217,9 @@ function MainRegister() {
                 <br></br>
                 <ReCAPTCHA
                   className="REcaptcha_change"
-                  sitekey="6Le_np0mAAAAALMOBxjRyHfzDwsn3QLDIKZz7bMg"
+                  sitekey="6Lfiz1EmAAAAACQpOM3uze8O7znRdGWscGiNyJRT"
                   onChange={onChange1}
-                  value={formData.recaptchaToken}
+                  value={data.captcha}
                 />
               </section>
             </div>
