@@ -6,85 +6,132 @@ import "./Pages.css";
 import axios from "axios"
 import toast from "react-hot-toast";
 import ReactLoading from "react-loading"
+import { useRef } from "react";
+import trim from "lodash/trim";
 
 function MainRegister() {
-  const [formData, setFormData] = useState({
-    name: "",
-    studentNumber: "",
-    branch: "",
-    email: "",
-    phone: "",
-    gender: "",
-    year: "",
-    residence: "",
-    section:"",
+//   const [formData, setFormData] = useState({
+//     name: "",
+//     studentNumber: "",
+//     branch: "",
+//     email: "",
+//     phone: "",
+//     gender: "",
+//     year: "",
+//     residence: "",
+//     section:"",
     
-  });
-  const [data ,setData] = useState({
-    captcha:"",
-  })
+//   });
+//   // const [data ,setData] = useState({
+//   //   captcha:"",
+//   // })
+//   const [reCaptchaValue, setReCaptchaValue] = useState('');
 
-  const [loading , setLoading] =useState(false);
-
-  const onChange = (e) => {
-    const { name, value } = e.target;
-    setFormData({ ...formData, [name]: value });
-  };
-
+//   const [loading , setLoading] =useState(false);
+// const [RecaptchaToken,setRecaptchaToken] = useState("");
+//   const onChange = (e) => {
+//     const { name, value } = e.target;
+//     setFormData({ ...formData, [name]: value });
+//   };
+//   const captchaRef = useRef();
  
-  function onChange1(value) {
-        console.log("Captcha value:", value);
-       setData({...data , captcha : value});
-     }
+//   // function onChange1(value) {
+//   //       console.log("Captcha value:", value);
+//   //      setData({...data , captcha : value});
+//   //    }
 
-     const submitHandler = async (e) => {
-      e.preventDefault();
+// const handleReCAPTCHA = (value) => {
+//   // formik.setFieldValue('captcha', value); // Update the formik field value
+//   setReCaptchaValue(value);
+//   // setIsRecaptchaVerified(true); // Set reCAPTCHA verification status
+//   // console.log('reCAPTCHA verified:', isRecaptchaVerified); // Debugging
+// };
+// const handleRecaptchaChange = React.useCallback((value) => {
+//   // console.log("FormWithCheckbox::handleRecaptchaChange > value: ", value);
+//   setRecaptchaToken(value);
+//   setReCaptchaValue(value);
+//   // setIsRecaptchaVerified(true); // Set reCAPTCHA verification status
+//   // console.log('reCAPTCHA verified:', isRecaptchaVerified); // Debugging
+// }, []);
+
+
+
+//      const submitHandler = async (e) => {
+//       e.preventDefault();
          
-      // const variableOrder = [
-      //   "name",
-      //   "gender",
-      //   "studentNumber",
-      //   "year",
-      //   "residence",
-      //   "branch",
-      //   "section",
-      //   "phone",
-      //   "email",
-      // ];
+//     try {
+//       setLoading(true);
+//       const response = await axios.post(
+//         "https://v2-ccc1.onrender.com/api/students/register",
+//         formData
+//       );
 
-      // const orderedFormData = {
-      //   name: formData.name,
-      //   gender: formData.gender,
-      //   studentNumber: formData.studentNumber,
-      //   year: formData.year,
-      //   residence: formData.residence,
-      //   branch: formData.branch,
-      //   section: formData.section,
-      //   phone: formData.phone,
-      //   email: formData.email,
-      // };
-      
+//       console.log(response.data);
 
-
-    try {
-      setLoading(true);
-      const response = await axios.post(
-        "https://v2-ccc1.onrender.com/api/students/register",
-        formData
-      );
-
-      console.log(response.data);
-
-    } catch (error) {
-      toast.error("submission failed");
-      console.error("Error submitting registration:", error);
+//     } catch (error) {
+//       toast.error("submission failed");
+//       console.error("Error submitting registration:", error);
    
-    }
-    setLoading(false);
-      console.log(formData);
+//     }
+//     setLoading(false);
+//       console.log(formData);
       
-    };
+//     };
+
+const SITE_KEY = trim("6Lfiz1EmAAAAACQpOM3uze8O7znRdGWscGiNyJRT");
+
+const [formData, setFormData] = useState({
+  name: "",
+  studentNumber: "",
+  branch: "",
+  email: "",
+  phone: "",
+  gender: "",
+  year: "",
+  residence: "",
+  section: "",
+});
+
+const [loading, setLoading] = useState(false);
+const [recaptchaToken, setRecaptchaToken] = useState("");
+
+const onChange = (e) => {
+  const { name, value } = e.target;
+  setFormData({ ...formData, [name]: value });
+};
+
+const handleRecaptchaChange = (value) => {
+  setRecaptchaToken(value);
+};
+
+const submitHandler = async (e) => {
+  e.preventDefault();
+         
+      try {
+        setLoading(true);
+        const response = await axios.post(
+          "https://v2-ccc1.onrender.com/api/students/register",
+          formData,
+          recaptchaToken,
+          {
+            headers: {
+              "Content-Type": "application/json", // Update content type if needed
+            },
+          }
+        );
   
+        console.log(response.data);
+  
+      } catch (error) {
+        toast.error("submission failed");
+        console.error("Error submitting registration:", error);
+     
+      }
+      setLoading(false);
+        console.log(formData);
+        
+    
+};
 
 
   return (
@@ -215,12 +262,9 @@ function MainRegister() {
                   onChange={onChange}
                 />
                 <br></br>
-                <ReCAPTCHA
-                  className="REcaptcha_change"
-                  sitekey="6Lfiz1EmAAAAACQpOM3uze8O7znRdGWscGiNyJRT"
-                  onChange={onChange1}
-                  value={data.captcha}
-                />
+                
+            <ReCAPTCHA important sitekey ={SITE_KEY} onChange={handleRecaptchaChange}  required  />
+            
               </section>
             </div>
             <div className="flex justify-center">
@@ -238,4 +282,5 @@ function MainRegister() {
   );
 }
 
-export default MainRegister;
+export default MainRegister
+    
