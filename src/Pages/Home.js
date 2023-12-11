@@ -27,9 +27,9 @@ const Home = () => {
         </div>
 
         <div className="main-below flex justify-between">
-          <div className="below-left flex flex-col ml-14 justify-between">
-            <div className="below-upside flex justify-between">
-              <div className="some flex gap-3">
+          <div className="below-left flex flex-col ml-2 justify-between">
+            <div className="below-upside flex justify-between ">
+              <div className="some flex gap-3 absolute left-[5%]">
                 <div>
                   {" "}
                   <img src={location} alt="ImageNA"></img>
@@ -39,7 +39,7 @@ const Home = () => {
                   <p>seminar hall</p>
                 </div>
               </div>
-              <div className="some flex gap-3">
+              <div className="some flex gap-3 absolute left-[35%]">
                 <div>
                   {" "}
                   <img src={calender} alt="ImageNA"></img>
@@ -53,30 +53,33 @@ const Home = () => {
             </div>
             <div className="below-downside text-[#fff]">
               <button
-                className="btn-pink bg-[#fff] text-[#000] w-40 h-14 font-semibold p-3 rounded-md"
+                className="btn-pink absolute top-[80%] bg-[#fff] text-[#000] w-40 h-14 m-30 font-semibold p-3 rounded-md"
                 onClick={clickHandler}
               >
                 Register now
               </button>
             </div>
           </div>
-          <div className="below-right">
-            <div>
+          <div className="text-right font-poppins">
+            <div className="font-bold text-2xl">
               <p>Speaker</p>
             </div>
-            <div>
-              <p> Rohit Negi</p>
-              <p> IIT Guwahati |</p>
-              <p> Ex- UBER SDE |</p>
-              <p>Got Highest</p>
-              <p>Placement in </p>
-              <p>India of 2Cr+ |</p>
-              <p> 150K+ Youtube</p>
+            <div className="font-bold ">
+            <p>Rohit Negi</p>
+            </div>
+            <div className="about_Rohitsir text-sm w-[100%]">
+              <p>
+               IIT Guwahati |
+               Ex- UBER SDE |
+              Got Highest
+              Placement in 
+              India of 2Cr+ |
+               150K+ Youtube</p>
             </div>
           </div>
         </div>
 
-        <div className=" text-[#fff]">
+        <div className="Home_footer text-[#fff] absolute top-[150%]">
 
           <Footer />
         </div>

@@ -48,7 +48,7 @@ code {
   margin-right: -4.5vw;
   background-clip: text;
 }
-.navbar-container .link:hover {
+.navbar-container .link:active {
   background: #fff;
   width: 150px;
   color: #090a0f;
@@ -67,4 +67,8 @@ code {
 }
 .Header {
   position: sticky;
+}
+
+.priya_maamphoto{
+  height: 100px;
 }
