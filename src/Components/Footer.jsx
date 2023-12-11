@@ -1,5 +1,5 @@
 import React from "react";
-import Tech from "../assets/Group 31.svg";
+import Tech from "../assets/Tech1.svg";
 import Rishabh from "../assets/Rectangle 29.svg";
 import Sarthak from "../assets/Sarthak Srivastava 1.svg";
 import Priya from "../assets/20221127_183841 1.svg";
@@ -10,7 +10,7 @@ import call from "../assets/Vector(2).svg";
 const Footer = () => {
   return (
     <div className="footer-container flex flex-col  ">
-      <div className="Tech-Buzz m-auto w-96">
+      <div className="Tech-Buzz m-auto w-96 mt-5">
         <img src={Tech} alt="" />{" "}
       </div>
 
