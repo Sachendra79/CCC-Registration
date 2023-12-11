@@ -24,7 +24,7 @@ function App() {
    <Route  path='/faculty' element={<Faculty/>} />
    <Route path='/register' element={<Register/>} />
     <Route path='footer' element={<Footer/>}/>
-    <Route path='/register/mainregister' element={<MainRegister />} />
+    {/* <Route path='/register/mainregister' element={<MainRegister />} /> */}
 
    </Routes>
    </div>
