@@ -47,7 +47,7 @@ const Home = () => {
                 <div>
                   {" "}
                   <p>Date: 15 Dec</p>
-                  <p>4:00PM onwards</p>
+                  <p>1:00PM onwards</p>
                 </div>
               </div>
             </div>
