@@ -78,22 +78,24 @@ function MainRegister() {
       
 //     };
 
-const SITE_KEY = trim("6Lfiz1EmAAAAACQpOM3uze8O7znRdGWscGiNyJRT");
+const SITE_KEY = trim("6Lcd2CMpAAAAAKLqwdxjTgnWwzSgAGEgtl0BVOng");
 
 const [formData, setFormData] = useState({
   name: "",
-  studentNumber: "",
+  student_no: "",
   branch: "",
   email: "",
-  phone: "",
+  phone_number: "",
   gender: "",
   year: "",
   residence: "",
   section: "",
+  captcha: ""
 });
 
+const captchaRef =useRef();
 const [loading, setLoading] = useState(false);
-const [recaptchaToken, setRecaptchaToken] = useState("");
+const [captcha, setcaptcha] = useState("");
 
 const onChange = (e) => {
   const { name, value } = e.target;
@@ -101,18 +103,20 @@ const onChange = (e) => {
 };
 
 const handleRecaptchaChange = (value) => {
-  setRecaptchaToken(value);
+  setcaptcha(value);
+  formData.captcha = value;
+  
 };
 
 const submitHandler = async (e) => {
   e.preventDefault();
-         
+        captchaRef.current.reset(); 
       try {
         setLoading(true);
         const response = await axios.post(
-          "https://v2-ccc1.onrender.com/api/students/register",
+          "https://registrationportal-hrxz.onrender.com/ad/register/",
           formData,
-          recaptchaToken,
+        captcha,
           {
             headers: {
               "Content-Type": "application/json", // Update content type if needed
@@ -121,6 +125,7 @@ const submitHandler = async (e) => {
         );
   
         console.log(response.data);
+      
   
       } catch (error) {
         toast.error("submission failed");
@@ -128,6 +133,7 @@ const submitHandler = async (e) => {
      
       }
       setLoading(false);
+     
         console.log(formData);
         
     
@@ -166,6 +172,7 @@ const submitHandler = async (e) => {
                   <option value="select">Select</option>
                   <option value="Male">Male</option>
                   <option value="Female">Female</option>
+                  <option value="Other">Other</option>
                 </select>
 
                 <br></br>
@@ -173,9 +180,9 @@ const submitHandler = async (e) => {
                 <label className="text-white">Student Number:</label>
                 <input
                   type="number"
-                  name="studentNumber"
+                  name="student_no"
                   className="h-[2rem] rounded"
-                  value={formData.studentNumber}
+                  value={formData.student_no}
                   onChange={onChange}
                 />
 
@@ -189,10 +196,10 @@ const submitHandler = async (e) => {
                   onChange={onChange}
                 >
                   <option value="select">Select</option>
-                  <option value="1">1st</option>
-                  <option value="2">2nd</option>
-                  <option value="3">3rd</option>
-                  <option value="4">4th</option>
+                
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  {/* <option value="4">4th</option> */}
                 </select>
 
                 <br></br>
@@ -205,8 +212,8 @@ const submitHandler = async (e) => {
                   onChange={onChange}
                 >
                   <option value="select">Select</option>
-                  <option value="Hostler">Hostler</option>
-                  <option value="Dayscholar">Day Scholar</option>
+                  <option value="Hosteler">Hostler</option>
+                  <option value="Day scholar">Day Scholar</option>
                 </select>
               </section>
               <section className="Right_register flex flex-col m-0 w-[25rem]">
@@ -220,11 +227,11 @@ const submitHandler = async (e) => {
                   <option value="select">Select</option>
                   <option value="CS">CS</option>
                   <option value="CSE">CSE</option>
-                  <option value="CS/IT">CS/IT</option>
+                  <option value="CSIT">CS/IT</option>
                   <option value="IT">IT</option>
-                  <option value="EC">EC</option>
-                  <option value="Mechanical">Mechanical</option>
-                  <option value="EC">EC</option>
+                  <option value="ECE">ECE</option>
+                  <option value="Me">Mechanical</option>
+                  <option value="CIVIL">CIVIL</option>
                 </select>
 
                 <br></br>
@@ -246,9 +253,9 @@ const submitHandler = async (e) => {
                 <label className="text-white">Phone Number:</label>
                 <input
                   type="number"
-                  name="phone"
+                  name="phone_number"
                   className="h-[2rem] rounded"
-                  value={formData.phone}
+                  value={formData.phone_number}
                   onChange={onChange}
                 />
 
@@ -263,7 +270,7 @@ const submitHandler = async (e) => {
                 />
                 <br></br>
                 
-            <ReCAPTCHA important sitekey ={SITE_KEY} onChange={handleRecaptchaChange}  required  />
+            <ReCAPTCHA important sitekey ={SITE_KEY} onChange={handleRecaptchaChange} ref={captchaRef} required  />
             
               </section>
             </div>
